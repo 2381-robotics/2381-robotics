@@ -10,8 +10,12 @@ Colonel By's Kernel Bye VEX EDR teams' official homepage (2019-2020 season).
 
 # Workflow
 ### Before You Start Coding
-1. In the repository on Github, navigate to Projects > 2381 Website Development
-2. Under the To-Do tab, pick a project and drag it to the Open tab (this is what you will be working on)
+1. In the repository on Github, navigate to the `<Issues>` tab
+2. If there is something here that is not assigned to anyone and you would like to work on, click on it and skip to step 5.
+3. Otherwise, create a New Issue and give it a title and a brief description.  Under Label tab on the right, select an appropriate label.
+5. Under the Projects section below Labels, click 2381 Website Code. 
+2. On the right, under the `<Assignees>` tab, select yourself.
+3. Navigate to the 2381 Website Project in the Projects Tab. Move the issue you selected from  `<To Do>` over to `<Open>`.
 3. Navigate back to <>Code in Github, create a new branch and call it the name of the feature you are developing (I.E. Navbar or Community Page etc.)
 4. On your local file explorer, go to the 2381-website file and GITBASH there
 5. Create a new branch by using the command `git branch <local branch name>` (NOTE: this local branch is a different thing than the branch you created in the cloud, and will be denoted as `<local branch name>` as opposed to `<cloud branch name>` )
