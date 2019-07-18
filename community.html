@@ -1,0 +1,174 @@
+<html>
+
+<head>
+    <title>Community</title>
+    <style>
+      body {
+        background-image: url("images/community.jpg");
+        /* Full height */
+
+ height: 100%;
+
+ /* Center and scale the image nicely */
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+      }
+
+      table {
+        background-color: #ddd;
+      }
+
+      .tb {
+        height : 200px;
+      }
+
+      #github {
+        width: 100px;
+        height: 100px;
+      }
+
+      #gitlab {
+        width: 100px;
+        height: 100px;
+      }
+
+      th {
+        font-weight: bolder;
+        font-size: 37px;
+      }
+    </style>
+    <link rel="stylesheet" href="nav2.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:900|Righteous|Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="topnav">
+        <button id="toggleMenu" class="hamburger hamburger--squeeze" type="button" onclick="toggleMenu()">
+            <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <span class="topNavText">VEX 2019</span>
+
+        <div id="teamTitle">
+            <a class="teamNameNumber">2381<div class="line">
+     </div></a>
+            <p class="teamNameRobotics">ROBOTICS</p>
+        </div>
+    </div>
+    <div id='sidenav'>
+        <table>
+            <tr>
+                <td><a class="link" href="#About">HOME
+  <div class="line">
+</div></a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#About">ABOUT
+ <div class="line">
+</div></a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#About">POSTS
+<div class="line">
+</div></a></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <div class="dropdown">
+                        <table cellspacing="0">
+                            <tr>
+                                <td>
+                                    <a class="link">TEAMS
+  <div class="line">
+  </div>
+</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="dropdown-content">
+                                        <a href="#">2381C<div class="line">
+    </div></a>
+                                        <a href="#">2381Y<div class="line">
+    </div></a>
+                                        <br>
+                                        <a href="#">2381Z<div class="line">
+    </div></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#About">COMMUNITY
+<div class="line">
+</div></a></td>
+            </tr>
+            <tr>
+                <td><a class="link" href="#About">SPONSORS
+<div class="line">
+</div></a></td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#About">JOIN US
+<div class="line">
+</div></a></td>
+            </tr>
+
+            <tr>
+                <td><a class="link" href="#About">CONTACT
+<div class="line">
+</div></a></td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="sidenavimage">
+    </div>
+
+<br><br><br><br><br><br><br>
+    <hr>
+
+    <table>
+      <tr>
+        <th>Henry Munro Robotics Demostrations<br><img class = "tb" src="images/henrymunro.jpeg"></th>
+        <td>2381 Robotics proudly showcased their competition ready robots to middle schoolers visiting Colonel By Secondary School. We explained the current state of our robot, design concepts, and STEM application in robotics. The day ended with the students being given the opportunity to personally drive our robots around on the playing field, giving them a practical sense of the exitement of competitive robotics.</td>
+      </tr>
+      <br>
+      <tr>
+        <th>Code Reveals<br><img class = "tb" src="images/code.png"></th>
+        <td>Teams 2381C and 2381X have released their code to the public with the motivation to aid other teams in their own programming journey in competitive robotics with concepts from basic motion control such as PID's to motion profiling.<br><img src="images/lablogo.png" id = "gitlab" onclick="window.location.href = 'https://gitlab.com/2381-robotics';"><img src="images/gitlogo.png" id="github" onclick="window.location.href = 'https://github.com/andydabin/Robotics-Code';"</td>
+      </tr>
+    <script>
+        sideNavOpen = false;
+
+        function toggleMenu() {
+
+            if (!sideNavOpen) {
+                sideNavOpen = true;
+                document.getElementById("sidenav").style.width = "260px";
+                document.getElementById("sidenavimage").style.marginLeft = "260px";
+                document.getElementById("sidenav").style.opacity = 1;
+                document.getElementById("sidenavimage").style.opacity = 1;
+                document.getElementById("toggleMenu").classList.add("is-active");
+            } else {
+                sideNavOpen = false;
+                document.getElementById("sidenav").style.width = "0";
+                document.getElementById("sidenavimage").style.marginLeft = "0";
+                document.getElementById("sidenav").style.opacity = 0;
+                document.getElementById("sidenavimage").style.opacity = 0;
+                document.getElementById("toggleMenu").classList.remove("is-active");
+            }
+        }
+    </script>
+</body>
+
+</html>
