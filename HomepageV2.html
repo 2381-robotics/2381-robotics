@@ -51,40 +51,49 @@
     <div id="sidenav">
         <table class="sidenavContent">
             <tr>
-                <td><a class="link activeLink" href="#Home">HOME
+                <td class="menuTD"><a class="link activeLink" href="#Home">HOME
 
                            </a></td>
             </tr>
             <tr>
-                <td><a class="link" href="#About">ABOUT
+                <td class="menuTD"><a class="link" href="#About">ABOUT
 
                           </a></td>
             </tr>
             <tr>
-                <td><a class="link" href="#Posts">POSTS
+                <td class="menuTD teamsList"><a class="link" href="#Teams">TEAMS
+
+                          </a><br>
+                          <a class="link" href="#2381X">2381X</a><br>
+                          <a class="link" href="#2381Y">2381Y</a><br>
+                          <a class="link" href="#2381C">2381C</a>                        
+                        </td>
+            </tr>
+            <tr>
+                <td class="menuTD"><a class="link" href="#Posts">POSTS
 
                           </a></td>
             </tr>
 
             <tr>
-                <td><a class="link" href="#Community">COMMUNITY
+                <td class="menuTD"><a class="link" href="#Community">COMMUNITY
 
                             </a></td>
             </tr>
             <tr>
-                <td><a class="link" href="#Sponsors">SPONSORS
-
-                            </a></td>
-            </tr>
-
-            <tr>
-                <td><a class="link" href="#Join Us">JOIN US
+                <td class="menuTD"><a class="link" href="#Sponsors">SPONSORS
 
                             </a></td>
             </tr>
 
             <tr>
-                <td><a class="link" href="#Contact">CONTACT
+                <td class="menuTD"><a class="link" href="#Join Us">JOIN US
+
+                            </a></td>
+            </tr>
+
+            <tr>
+                <td class="menuTD"><a class="link" href="#Contact">CONTACT
 
                             </a></td>
             </tr>
@@ -110,24 +119,24 @@
 
             } else {
                 sideNavOpen = false;
-                sideNavIterator = 6;
+                sideNavIterator = 7;
                 closeMenu = setInterval(closeMenuOptions, 75);
                 document.getElementById("toggleMenu").classList.remove("is-active");
             }
         }
 
         function openMenuOptions() {
-            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "100px";
+            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "100px";
             sideNavIterator++;
             document.getElementById("toggleMenu").disabled = true;
-            if (sideNavIterator == 7) {
+            if (sideNavIterator == 8) {
                 clearInterval(openMenu)
                 document.getElementById("toggleMenu").disabled = false;
             }
         }
 
         function closeMenuOptions() {
-            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "0px";
+            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "0px";
             sideNavIterator--;
             document.getElementById("toggleMenu").disabled = true;
             if (sideNavIterator < 0) {
