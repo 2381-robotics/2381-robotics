@@ -1,13 +1,14 @@
 <html>
 
 <head>
-    <title>Home 2.0</title>
+    <title>2381 Robotics</title>
     <link rel="stylesheet" href="HomepageV2.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Half dark red -->
+    <div id="splash">
     <div class="background1"></div>
     <div class="background2"></div>
     <div class="texture"></div>
@@ -99,6 +100,25 @@
             </tr>
         </table>
     </div>
+</div>
+    
+    <div class="TeamsContainer">
+        <button class="moveTeamsButtonLeft"onclick="moveL()">&#11164;</button>
+        <div class="card" style="background-image:url('images/ExampleBackground.jpg');
+        ">
+            <a href="2381C.ca"class="teamPageLink" >2381C</a>
+          </div>
+          <div class="card" style="background-image:url('images/ExampleBackground2.jpg');
+          ">
+            <a href="2381X.ca"class="teamPageLink">2381X</a>
+          </div>
+          <div class="card" style="background-image:url('images/ExampleBackground3.jpg');
+          ">
+            <a href="2381Y.ca"class="teamPageLink">2381Y</a>
+          </div>
+          <button class="moveTeamsButtonRight" onclick="moveR()">&#11166;</button>
+
+    </div>
 
     <div id="topButton">
         <a href="#"><img src="images/back-to-top-arrow.png" width = "30px" height="30px"></a>
@@ -107,8 +127,9 @@
         sideNavIterator = 0;
         sideNavOpen = false;
 
-        window.onload = function() {  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;}
+        window.onload = function() {  //document.body.scrollTop = 0;
+  //document.documentElement.scrollTop = 0;}
+        }
 
         function toggleMenu() {
             if (!sideNavOpen) {
