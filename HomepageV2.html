@@ -65,9 +65,13 @@
                 <td class="menuTD teamsList"><a class="link" href="#Teams">TEAMS
 
                           </a><br>
+                          <a class="link" href="#2381X">2381A</a><br>
+                          <a class="link" href="#2381X">2381B</a><br>
+                          <a class="link" href="#2381X">2381C</a><br>
+                          <a class="link" href="#2381X">2381W</a><br>
                           <a class="link" href="#2381X">2381X</a><br>
                           <a class="link" href="#2381Y">2381Y</a><br>
-                          <a class="link" href="#2381C">2381C</a>                        
+                          <a class="link" href="#2381C">2381Z</a>                        
                         </td>
             </tr>
             <tr>
@@ -102,22 +106,57 @@
     </div>
 </div>
     
-    <div class="TeamsContainer">
-        <button class="moveTeamsButtonLeft"onclick="moveL()">&#11164;</button>
-        <div class="card" style="background-image:url('images/ExampleBackground.jpg');
-        ">
-            <a href="2381C.ca"class="teamPageLink" >2381C</a>
-          </div>
-          <div class="card" style="background-image:url('images/ExampleBackground2.jpg');
-          ">
-            <a href="2381X.ca"class="teamPageLink">2381X</a>
-          </div>
-          <div class="card" style="background-image:url('images/ExampleBackground3.jpg');
-          ">
-            <a href="2381Y.ca"class="teamPageLink">2381Y</a>
-          </div>
-          <button class="moveTeamsButtonRight" onclick="moveR()">&#11166;</button>
+    <div id="teamsContainer">
+        <div id="teamsBackgroundTitle">
+                <h2>VIEW</h2>
+                <h1>TEAMS</h1>
+                <center>
+                <button onclick="revealCards()" class="pulsate"><img src="images/back-to-top-arrow.png" class="pulsate" width = "50px" height="50px"></button>
+                </center>
 
+        </div>
+            <button class="moveTeamsButtonLeft"onclick="moveCardsLeft()">&#11164;</button>
+            <button class="moveTeamsButtonRight" onclick="moveCardsRight()">&#11166;</button>
+    <table id="cardContainer">
+<tr>
+
+<td>
+        <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
+            <a href="2381C.ca"class="teamPageLink" >2381A</a>
+        </div>
+</td>
+<td>
+        <div class="card" style="background-image:url('images/ExampleBackground2.jpg');">
+            <a href="2381C.ca"class="teamPageLink" >2381B</a>
+        </div>
+</td>
+<td>
+        <div class="card" style="background-image:url('images/ExampleBackground3.jpg');">
+            <a href="2381C.ca"class="teamPageLink" >2381C</a>
+        </div>
+</td>
+<td>
+        <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
+            <a href="2381C.ca"class="teamPageLink" >2381W</a>
+        </div>
+</td>
+<td>
+        <div class="card" style="background-image:url('images/ExampleBackground2.jpg');">
+            <a href="2381C.ca"class="teamPageLink" >2381X</a>
+        </div>
+</td>
+<td>
+        <div class="card" style="background-image:url('images/ExampleBackground3.jpg');">
+            <a href="2381C.ca"class="teamPageLink" >2381Y</a>
+        </div>
+</td>
+<td>
+        <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
+            <a href="2381C.ca"class="teamPageLink" >2381Z</a>
+        </div>
+</td>
+</tr>
+        </table>
     </div>
 
     <div id="topButton">
@@ -176,7 +215,22 @@ function scrollFunction() {
     document.getElementById("topButton").style.opacity = "0";
     document.getElementById("topButton").style.bottom = "0";  }
 }
-
+cardIterator = 0
+function moveCardsLeft() {
+    if(cardIterator < 0) {
+    cardIterator += 415;
+    document.getElementById("cardContainer").style.left = cardIterator;
+    }
+}
+function moveCardsRight() {
+    if(cardIterator > -4 *415) {
+    cardIterator -= 415;
+    document.getElementById("cardContainer").style.left = cardIterator;
+    }
+}
+function revealCards() {
+    document.getElementById("teamsBackgroundTitle").style.height = 0;
+}
     </script>
 </body>
 
