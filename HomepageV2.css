@@ -32,12 +32,70 @@ body {
     margin: 0;    
     font-family: "neutra-bold";
 }
+
+
+
+#towerTakeoverYT {
+    width:560px;
+    height:316px;
+    z-index:300;
+    border-radius:9px;
+    position:relative;
+    margin-top:40px;
+}
+
+#vexInfoSection {
+    width:100%;
+    height:100%;
+ }
+
+ #vexInfoSection p {
+    color:rgb(249, 211, 139);
+    font-size:20px;
+    font-family:'neutra';
+ }
+
+ #vexInfoSection img {
+    z-index:200;
+    width:400px;
+    height:400px;
+    margin-left:770px;
+    margin-top:-90px;
+    position:absolute;
+ }
+
+.background3 {
+    background-color:rgb(170, 7, 35);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 52%;
+    position: absolute;
+    z-index: 0;
+}
+.background4 {
+    background-image: linear-gradient(rgb(137, 4, 29), rgb(170, 7, 35) 80%);
+    padding: 0;
+    margin: 0;
+    margin-left: 50%;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+
+
 @keyframes pulse_animation {
     10% { opacity:1; }
     50% { opacity:0; }
     90% { opacity:1; }
 
 }
+
+
 .pulsate {
     border:none;
     background:none;
@@ -58,12 +116,13 @@ body {
     width:100%;
     height:80%;
     position:absolute;
-    background-color:rgb(249, 211, 139);
+    background-color:rgb(170, 7, 35);
  }
  #teamsBackgroundTitle {
     width:100%;
     height:100%;
     background-color:rgb(249, 211, 139);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
     z-index:200;
     position:absolute;
     overflow:hidden;
@@ -109,11 +168,10 @@ body {
       position:absolute;
       top:50%;
       left:20px;
-      padding:20px;
-      background-color:rgb(170, 7, 35);
+      background:none;
+      font-size:50px;
       color:rgb(249, 211, 139);
       border:none;
-      border-radius:10px;
       z-index:100;
 
     }
@@ -121,26 +179,29 @@ body {
         position:absolute;
         top:50%;
         right:20px;
-        padding:20px;
-        background-color:rgb(170, 7, 35);
+        background:none;
+        font-size:50px;
         color:rgb(249, 211, 139);
         border:none;
-        border-radius:10px;
         z-index:100;
       }
   .teamPageLink {
     display:inline-block;
-    margin-top:360px;
-    background-color:rgb(137, 4, 29);
-    width:80px;
-    padding:20px;
+    position:relative;
+    font-size:150px;
+    color:black;
+    background-color:rgb(249, 211, 139);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.65);
+    width:100%;
+    height:100%;
+    mix-blend-mode: screen;
     text-decoration:none;
-    color:rgb(249, 211, 139);
     border-radius:10px;
-    transition:0.2s ease-in-out;
+    transition:0.25s ease-in-out;
+    line-height:125px;
   }
   .teamPageLink:hover {
-      background-color:rgb(170, 7, 35);
+    background-color:black;
   }
 
 
