@@ -33,6 +33,84 @@ body {
     font-family: "neutra-bold";
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(170, 7, 35);
+  }
+
+
+
+
+
+  .slideshow{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+   display:block;
+    padding:0;
+    margin:0;
+    position:relative;
+  }
+  .slideNavigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .bar{
+    width: 50px;
+    height: 10px;
+    border: 2px solid rgb(249, 211, 139);;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .bar:hover{
+    background: rgb(249, 211, 139);;
+  }
+  
+  input[name="r"]{
+      position: absolute;
+      visibility: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 0.6s;
+  }
+  .slide img{
+    width: 100%;
+    height: 100%;
+  }
+  
+  #r1:checked ~ .s1{
+    margin-left: 0;
+  }
+  #r2:checked ~ .s1{
+    margin-left: -20%;
+  }
+  #r3:checked ~ .s1{
+    margin-left: -40%;
+  }
+  #r4:checked ~ .s1{
+    margin-left: -60%;
+  }
+  #r5:checked ~ .s1{
+    margin-left: -80%;
+  }
+
+  
+
+
+
 
 
 #towerTakeoverYT {
@@ -114,9 +192,9 @@ body {
 }
 #teamsContainer {
     width:100%;
-    height:80%;
-    position:absolute;
+    height:90%;
     background-color:rgb(170, 7, 35);
+    position:relative;
  }
  #teamsBackgroundTitle {
     width:100%;
@@ -151,7 +229,7 @@ body {
     transition: 0.3s;
     width: 275px;
     height:400px;
-    border-radius: 10px;
+    border-radius: 10px 10px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-top:20px;
@@ -185,7 +263,7 @@ body {
         border:none;
         z-index:100;
       }
-  .teamPageLink {
+  .teamPageImage {
     display:inline-block;
     position:relative;
     font-size:150px;
@@ -200,10 +278,27 @@ body {
     transition:0.25s ease-in-out;
     line-height:125px;
   }
-  .teamPageLink:hover {
+  .card:hover .teamPageImage {
     background-color:black;
   }
 
+  .card:hover .teamPageLink {
+      transform:translateY(10px);
+      opacity:1;
+  }
+  .teamPageLink {
+      background-color:rgb(249, 211, 139);
+      color:rgb(137, 4, 29);
+      font-size:16px;
+      border-radius:5px;
+      opacity:0;
+      overflow:hidden;
+      transition:0.25s ease-in-out;
+      padding-top:10px;
+      padding-bottom:10px;
+      display:block;
+      text-decoration:none;
+  }
 
 #splash {
     height:100%;
