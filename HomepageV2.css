@@ -40,9 +40,44 @@ body{
   }
 
 
+.footer {
+    width:100%;
+    height:250px;
+    background-color:rgb(170, 7, 35);
+    position:relative;
+    border-top:10px solid rgb(249, 211, 139);
 
+}
 
+.footer .mediaLinks {
+    float:left;
+    padding:20px;
+    width:50px;
+    height:50px;
+    margin-top:50%;
+}
+.footer .logo {  
+    margin-top:35px;  
+    color: rgb(249, 211, 139);
+    position: relative;
+    border: 2px solid rgb(249, 211, 139);
+    padding: 6px;
+    font-size: 15px;
+    z-index: 200;
+    display:inline-block;
+}
+.footer img {
+    position:relative;
+    width:65px;
+    height:65px;
+    margin-top:50px;
+    padding:15px;
+}
+.slideshowContainer {
+    height:100%;
+    width:100%;
 
+}
   .slideshow{
     width:100%;
     height:100%;
@@ -189,18 +224,19 @@ body{
     height:100%;
     transition:0.8s ease-in-out;
     left:0;
+
 }
 #teamsContainer {
     width:100%;
     height:90%;
     background-color:rgb(170, 7, 35);
     position:relative;
+    border-bottom:10px solid rgb(249, 211, 139);
  }
  #teamsBackgroundTitle {
     width:100%;
     height:100%;
     background-color:rgb(249, 211, 139);
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
     z-index:200;
     position:absolute;
     overflow:hidden;

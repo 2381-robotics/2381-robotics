@@ -28,7 +28,7 @@
 
             </button>
             <center>
-                <div class="teamLogo">2381 ROBTICS</div>
+                <div class="teamLogo">2381 ROBOTICS</div>
             </center>
             <div class="contactInfo">
                 <span class="contactText2">CONTACT INFO HERE</span>
@@ -220,6 +220,7 @@
 
 
 
+<div class="slideshowContainer">
 
     <div class="slideshow">
         <div class="slides">
@@ -253,15 +254,27 @@
           <label for="r5" class="bar"></label>
         </div>
       </div>
-
-
-
-
-
-
-    <div id="topButton">
-        <a href="#"><img src="images/back-to-top-arrow.png" width="30px" height="30px"></a>
     </div>
+
+<div class="footer">
+    <div class="texture"></div>
+    <center>
+        <div>
+            <a href="#"><img src="images/instagramLogo.png"></a>
+            <a href="#"><img src="images/githubLogo.png"></a>
+            <a href="#"><img src="images/youtubeLogo.png"></a>
+        </div>
+    <div class="logo">2381 ROBOTICS</div>
+</center>
+
+</div>
+    
+
+
+
+    <a  href="#" id="topButton">
+        <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+    </a>
     
     
     
@@ -271,9 +284,10 @@
         sideNavIterator = 0;
         sideNavOpen = false;
 
-        window.onload = function() { //document.body.scrollTop = 0;
-            //document.documentElement.scrollTop = 0;}
-        }
+        window.onload = function() { 
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;}
+        
 
         function toggleMenu() {
             if (!sideNavOpen) {
