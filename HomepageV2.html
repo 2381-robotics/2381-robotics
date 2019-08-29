@@ -31,7 +31,7 @@
                 <div class="teamLogo">2381 ROBOTICS</div>
             </center>
             <div class="contactInfo">
-                <span class="contactText2">CONTACT INFO HERE</span>
+                <span class="contactText2">cbrobotics2381@gmail.com</span>
                 <span class="contactText1">GET IN TOUCH</span></div>
 
         </div>
@@ -65,23 +65,8 @@
                           </a></td>
                 </tr>
                 <tr>
-                    <td class="menuTD teamsList"><a class="link" href="#Teams">TEAMS
-
-                          </a>
-                        <br>
-                        <a class="link" href="#2381X">2381A</a>
-                        <br>
-                        <a class="link" href="#2381X">2381B</a>
-                        <br>
-                        <a class="link" href="#2381X">2381C</a>
-                        <br>
-                        <a class="link" href="#2381X">2381W</a>
-                        <br>
-                        <a class="link" href="#2381X">2381X</a>
-                        <br>
-                        <a class="link" href="#2381Y">2381Y</a>
-                        <br>
-                        <a class="link" href="#2381C">2381Z</a>
+                    <td class="menuTD menuTeamLink"><a class="link" href="#Teams" onclick="toggleTeamsList()">TEAMS
+                        
                     </td>
                 </tr>
                 <tr>
@@ -115,44 +100,70 @@
             </table>
         </div>
     </div>
+    <div id="menuTeamList">
+        </a>
+        <a class="link" href="#2381X">A</a>
+        <br>
+        <a class="link" href="#2381X">B</a>
+        <br>
+        <a class="link" href="#2381X">C</a>
+        <br>
+        <a class="link" href="#2381X">W</a>
+        <br>
+        <a class="link" href="#2381X">X</a>
+        <br>
+        <a class="link" href="#2381Y">Y</a>
+        <br>
+        <a class="link" href="#2381C">Z</a>
+    </div>
 
+    <script>
+    var teamListOpen = false;
+    function toggleTeamsList() {
+        if(!teamListOpen) {
+        document.getElementById("menuTeamList").style.marginLeft = "0";
+        teamListOpen = true;
+    }
+    else {
+        document.getElementById("menuTeamList").style.marginLeft = "-30px";
+        teamListOpen = false;
+    }
+}
+    </script>
 
 
 
 
 
     <div id="vexInfoSection">
-            <div class="background3"></div>
-            <div class="background4"></div>
-            <div class="texture"></div>
-            <div style="width:40%;position:absolute;margin-left:50px;">
-                <img src="images/towerTakeover.png">
-                <p>2381 Robotics is a club run at Colonel By Secondary School in Ottawa with multiple competitive teams working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a robotics competition for elementary through university students, where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete the challenge as best as they can.</p>
-                <a href="https://www.vexrobotics.com/" target="_blank" style="color:rgb(249, 211, 139);font-size:16px;font-family:'neutra';text-decoration: underline;">Click here to visit their website</a>
-                <br>
-        <iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                
+        <div class="background3"></div>
+        <div class="background4"></div>
+        <div class="texture"></div>
+        <div style="width:40%;position:absolute;margin-left:4%;">
+            <img src="images/towerTakeover.png">
+            <p>2381 Robotics is a club run at Colonel By Secondary School in Ottawa with multiple competitive teams working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a robotics competition for elementary through university students, where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete the challenge as best as they can.</p>
+            <a href="https://www.vexrobotics.com/" target="_blank" style="color:rgb(249, 211, 139);font-size:16px;font-family:'neutra';text-decoration: underline;">Click here to visit their website</a>
+            <br>
+            <iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            </div>
-            <div style="width:40%;position:absolute;margin-left:760px;margin-top:200px;">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                <p style="text-align:right;">The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field. Two alliances, one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second autonomous period, followed by a one minute and forty-five second driver controlled period. The object of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or scoring cubes in goals.</p>
-                <a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank" style="color:rgb(249, 211, 139);font-size:16px;font-family:'neutra';float:right;text-decoration: underline;">Click here for more information</a>
-            </div>
+        </div>
+        <div style="width:40%;position:absolute;margin-left:55%;margin-top:200px;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <p style="text-align:right;">The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field. Two alliances, one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second autonomous period, followed by a one minute and forty-five second driver controlled period. The object of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or scoring cubes in goals.</p>
+            <a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank" style="color:rgb(249, 211, 139);font-size:16px;font-family:'neutra';float:right;text-decoration: underline;">Click here for more information</a>
+        </div>
     </div>
 
 
-
-
-
+    
     <div id="teamsContainer">
-            <div class="texture"></div>
+        <div class="texture"></div>
 
         <div id="teamsBackgroundTitle">
-            
+
             <h2>VIEW</h2>
             <h1>TEAMS</h1>
             <center>
@@ -181,35 +192,35 @@
                 <td>
                     <div class="card" style="background-image:url('images/ExampleBackground3.jpg');">
                         <a class="teamPageImage">23<br>81<br>C</a>
-                                                <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td>
                     <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
                         <a class="teamPageImage">23<br>81<br>W</a>
-                                                <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td>
                     <div class="card" style="background-image:url('images/ExampleBackground2.jpg');">
                         <a class="teamPageImage">23<br>81<br>X</a>
-                                                <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td>
                     <div class="card" style="background-image:url('images/ExampleBackground3.jpg');">
                         <a class="teamPageImage">23<br>81<br>Y</a>
-                                                <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td>
                     <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
                         <a class="teamPageImage">23<br>81<br>Z</a>
-                                                <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
@@ -217,77 +228,92 @@
         </table>
     </div>
 
+    <div class="slideshowContainer">
 
+        <div class="slideshow">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+                <input type="radio" name="r" id="r6">
+                <input type="radio" name="r" id="r7">
+                <input type="radio" name="r" id="r8">
+                <input type="radio" name="r" id="r9">
+                <input type="radio" name="r" id="r10">
+                <div class="slide s1">
+                    <img src="images/slideshowImage1.jpg" alt="">
+                </div>
+                <div class="slide">
+                        <img style="bottom:0;" src="images/slideshowImage2.jpg" alt="">
+                    </div>
+                <div class="slide">
+                        <img src="images/slideshowImage3.jpg" alt="">
+                    </div>
+                <div class="slide">
+                        <img style="bottom:-100px;" src="images/slideshowImage4.jpg" alt="">
+                    </div>
+                <div class="slide">
+                        <img src="images/slideshowImage5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                            <img style="bottom:0;" src="images/slideshowImage6.jpg" alt="">
+                        </div>
+                        <div class="slide">
+                                <img style="bottom:0;" src="images/slideshowImage7.jpg" alt="">
+                            </div>
+                        <div class="slide">
+                                <img src="images/slideshowImage8.jpg" alt="">
+                            </div>
+                        <div class="slide">
+                                <img style="bottom:0;" src="images/slideshowImage9.jpg" alt="">
+                            </div>
+                        <div class="slide">
+                                <img style="bottom:0;" src="images/slideshowImage10.jpg" alt="">
+                            </div>
+            </div>
 
-
-<div class="slideshowContainer">
-
-    <div class="slideshow">
-        <div class="slides">
-          <input type="radio" name="r" id="r1" checked>
-          <input type="radio" name="r" id="r2">
-          <input type="radio" name="r" id="r3">
-          <input type="radio" name="r" id="r4">
-          <input type="radio" name="r" id="r5">
-          <div class="slide s1">
-            <img src="images/ExampleBackground.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/ExampleBackground2.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/ExampleBackground3.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/ExampleBackground.jpg" alt="">
-          </div>
-          <div class="slide">
-            <img src="images/ExampleBackground2.jpg" alt="">
-          </div>
+            <div class="slideNavigation">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+                <label for="r6" class="bar"></label>
+                <label for="r7" class="bar"></label>
+                <label for="r8" class="bar"></label>
+                <label for="r9" class="bar"></label>
+                <label for="r10" class="bar"></label>
+            </div>
         </div>
-  
-        <div class="slideNavigation">
-          <label for="r1" class="bar"></label>
-          <label for="r2" class="bar"></label>
-          <label for="r3" class="bar"></label>
-          <label for="r4" class="bar"></label>
-          <label for="r5" class="bar"></label>
-        </div>
-      </div>
     </div>
 
-<div class="footer">
-    <div class="texture"></div>
-    <center>
-        <div>
-            <a href="#"><img src="images/instagramLogo.png"></a>
-            <a href="#"><img src="images/githubLogo.png"></a>
-            <a href="#"><img src="images/youtubeLogo.png"></a>
-        </div>
-    <div class="logo">2381 ROBOTICS</div>
-</center>
+    <div class="footer">
+        <div class="texture"></div>
+        <center>
+            <div>
+                <a href="#"><img src="images/instagramLogo.png"></a>
+                <a href="#"><img src="images/githubLogo.png"></a>
+                <a href="#"><img src="images/youtubeLogo.png"></a>
+            </div>
+            <div class="logo">2381 ROBOTICS</div>
+        </center>
 
-</div>
-    
+    </div>
 
-
-
-    <a  href="#" id="topButton">
+    <a href="#" id="topButton">
         <img src="images/back-to-top-arrow.png" width="30px" height="30px">
     </a>
-    
-    
-    
-    
-    
+
     <script>
         sideNavIterator = 0;
         sideNavOpen = false;
 
-        window.onload = function() { 
+        window.onload = function() {
             document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;}
-        
+            document.documentElement.scrollTop = 0;
+        }
 
         function toggleMenu() {
             if (!sideNavOpen) {
@@ -295,11 +321,14 @@
                 sideNavIterator = 0;
                 document.getElementById("toggleMenu").classList.add("is-active");
                 openMenu = setInterval(openMenuOptions, 75);
+                document.getElementById("menuTeamList").style.marginLeft = "-30px";
+
 
             } else {
                 sideNavOpen = false;
                 sideNavIterator = 7;
                 closeMenu = setInterval(closeMenuOptions, 75);
+                document.getElementById("menuTeamList").style.marginLeft = "-40px";
                 document.getElementById("toggleMenu").classList.remove("is-active");
             }
         }
