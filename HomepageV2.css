@@ -710,54 +710,54 @@ input[name="r"] {
 
 @media only screen and (max-width:1024px) {
     #sidenav {
-        top: 25%;
+        top: 200px;
     }
     #menuTeamList {
-        top:25%;
+        top:200px;
     }
     .link {
-        font-size: 1.95vw;
+        font-size: 15px;
     }
     
     .link:hover {
-        font-size: 2.08vw;
+        font-size: 16px;
     } 
     #splash {
-        height:50%;
+        height:500px;
     }
     .vex2019text {
         position: absolute;
-        bottom:50%;
+        top:450px;
     }
 
 
 
     #toggleMenu {
-        font-size: 1.95vw;
+        font-size: 16px;
     }
     #toggleMenu:hover .line {
-        width: 5.47vw;
+        width: 45px;
     }
     .teamLogo {
-        font-size: 1.95vw;
+        font-size: 15px;
     }
     .contactText1 {
-        font-size: 1.95vw;
-        height: 2.08vw;
+        font-size: 15px;
+        height: 16px;
     }
     
     .contactText2 {
-        font-size: 1.95vw;
+        font-size: 15px;
     }
     
     .contactInfo:hover .contactText2 {
-        height: 2.08vw;
+        height: 16px;
     }
     .sidenavContent .activeLink {
-        font-size: 2.08vw;
+        font-size: 16px;
     }
     #vexInfoSection p {
-        font-size: 2.6vw;
+        font-size: 20px;
     }
 
 
@@ -768,7 +768,7 @@ input[name="r"] {
         font-size: 200px;
     }
     #vexInfoSection {
-        height: 65%;
+        height: 675px;
     }
     #towerTakeoverYT {
         width: 40.36vw;
@@ -782,16 +782,16 @@ input[name="r"] {
         margin-top: 0px;
     }
     #teamsContainer {
-        height: 50%;
+        height: 500px;
     }
     #teamsBackgroundTitle h1 {
-        font-size: 20.83vw;
+        font-size: 160px;
         margin-left: 100px;
         margin-top: -35px;
     }
     
     #teamsBackgroundTitle h2 {
-        font-size: 9.76vw;        
+        font-size: 75px;        
         margin-top: 50px;
         margin-left: 100px;
     }
