@@ -1,7 +1,9 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
     <title>2381 Robotics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="HomepageV2.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
 </head>
@@ -39,13 +41,15 @@
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
 
         <div>
+            
             <h1 class="largeTitle">KERNEL BYE'S</h1>
 
         </div>
 
         <div>
-            <h1 class="thinTitle"><span style="color:rgb(121,2,24);">2<span style="font-size:150px;">&nbsp;</span>3<span style="font-size:150px;">&nbsp;</span></span><span style="color:rgb(170,7,35);">8<span style="font-size:150px;">&nbsp;</span>1</span></h1>
+            <h1 class="thinTitle"><span style="color:rgb(121,2,24);">23</span><span style="color:rgb(170,7,35);">81</span></h1>
         </div>
+
         <div>
             <center>
                 <img src="images/robot.png" class="robotImage">
@@ -246,31 +250,31 @@
                     <img src="images/slideshowImage1.jpg" alt="">
                 </div>
                 <div class="slide">
-                        <img style="bottom:0;" src="images/slideshowImage2.jpg" alt="">
+                        <img style="" src="images/slideshowImage2.jpg" alt="">
                     </div>
                 <div class="slide">
                         <img src="images/slideshowImage3.jpg" alt="">
                     </div>
                 <div class="slide">
-                        <img style="bottom:-100px;" src="images/slideshowImage4.jpg" alt="">
+                        <img style="" src="images/slideshowImage4.jpg" alt="">
                     </div>
                 <div class="slide">
                         <img src="images/slideshowImage5.jpg" alt="">
                     </div>
                     <div class="slide">
-                            <img style="bottom:0;" src="images/slideshowImage6.jpg" alt="">
+                            <img style="" src="images/slideshowImage6.jpg" alt="">
                         </div>
                         <div class="slide">
-                                <img style="bottom:0;" src="images/slideshowImage7.jpg" alt="">
+                                <img style="" src="images/slideshowImage7.jpg" alt="">
                             </div>
                         <div class="slide">
                                 <img src="images/slideshowImage8.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img style="bottom:0;" src="images/slideshowImage9.jpg" alt="">
+                                <img style="" src="images/slideshowImage9.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img style="bottom:0;" src="images/slideshowImage10.jpg" alt="">
+                                <img style="" src="images/slideshowImage10.jpg" alt="">
                             </div>
             </div>
 
@@ -334,7 +338,7 @@
         }
 
         function openMenuOptions() {
-            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "100px";
+            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "13vw";
             sideNavIterator++;
             document.getElementById("toggleMenu").disabled = true;
             if (sideNavIterator == 8) {
@@ -367,17 +371,21 @@
             }
         }
         cardIterator = 0
-
+        counter = 0;
+        moveDist = document.documentElement.clientWidth * 0.99;
+        
         function moveCardsLeft() {
-            if (cardIterator < 0) {
-                cardIterator += 415;
+            if (counter > 0) {
+                counter--;
+                cardIterator += moveDist;
                 document.getElementById("cardContainer").style.left = cardIterator;
             }
         }
 
         function moveCardsRight() {
-            if (cardIterator > -4 * 415) {
-                cardIterator -= 415;
+            if (counter < 6) {
+                counter++;
+                cardIterator -= moveDist;
                 document.getElementById("cardContainer").style.left = cardIterator;
             }
         }
