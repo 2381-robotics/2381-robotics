@@ -33,11 +33,9 @@
                 <div class="teamLogo">2381 ROBOTICS</div>
             </center>
             <div class="contactInfo">
-                <span class="contactText2">cbrobotics2381@gmail.com</span>
-                <span class="contactText1">GET IN TOUCH</span></div>
-
+                <a href="#contact" class="contactText1">GET IN TOUCH</a></div>
         </div>
-        <span class="vex2019text"><span style="font-size:40px;">VEX</span>
+        <span class="vex2019text"><span class="vexText">VEX</span>
         <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
 
         <div>
@@ -142,22 +140,23 @@
     <div id="vexInfoSection">
         <div class="background3"></div>
         <div class="background4"></div>
-        <div class="texture"></div>
-        <div style="width:40%;position:absolute;margin-left:4%;">
+        <div class="texture" ></div>
+        <div class="vexInfoText1" >
+            
             <img src="images/towerTakeover.png">
             <p>2381 Robotics is a club run at Colonel By Secondary School in Ottawa with multiple competitive teams working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a robotics competition for elementary through university students, where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete the challenge as best as they can.</p>
-            <a href="https://www.vexrobotics.com/" target="_blank" style="color:rgb(249, 211, 139);font-size:16px;font-family:'neutra';text-decoration: underline;">Click here to visit their website</a>
+            <a href="https://www.vexrobotics.com/" target="_blank" style="color:rgb(249, 211, 139);font-family:'neutra';text-decoration: underline;">Click here to visit their website</a>
             <br>
             <iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
         </div>
-        <div style="width:40%;position:absolute;margin-left:55%;margin-top:200px;">
+        <div class="vexInfoText2">
             <br>
             <br>
             <br>
             <br>
-            <p style="text-align:right;">The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field. Two alliances, one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second autonomous period, followed by a one minute and forty-five second driver controlled period. The object of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or scoring cubes in goals.</p>
-            <a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank" style="color:rgb(249, 211, 139);font-size:16px;font-family:'neutra';float:right;text-decoration: underline;">Click here for more information</a>
+            <p>The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field. Two alliances, one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second autonomous period, followed by a one minute and forty-five second driver controlled period. The object of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or scoring cubes in goals.</p>
+            <a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank" style="color:rgb(249, 211, 139);font-family:'neutra';float:right;text-decoration: underline;">Click here for more information</a>
         </div>
     </div>
 
@@ -168,10 +167,10 @@
 
         <div id="teamsBackgroundTitle">
 
-            <h2>VIEW</h2>
+            <h2>VIEW</h2><br>
             <h1>TEAMS</h1>
             <center>
-                <button onclick="revealCards()" class="pulsate"><img src="images/back-to-top-arrow.png" class="pulsate" width="50px" height="50px"></button>
+                <button onclick="revealCards()" class="pulsate"><img src="images/back-to-top-arrow.png" class="pulsate"></button>
             </center>
 
         </div>
@@ -181,48 +180,48 @@
 
             <tr>
 
-                <td>
-                    <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
+                <td align="center">
+                    <div class="card" onclick="showTeamPageLink(0)"style="opacity:1;height:400px;background-image:url('images/ExampleBackground.jpg');">
                         <a class="teamPageImage">23<br>81<br>A</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
                     </div>
                 </td>
-                <td>
-                    <div class="card" style="background-image:url('images/ExampleBackground2.jpg');">
+                <td align="center">
+                    <div class="card" onclick="showTeamPageLink(1)"style="background-image:url('images/ExampleBackground2.jpg');">
                         <a class="teamPageImage">23<br>81<br>B</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
                     </div>
                 </td>
-                <td>
-                    <div class="card" style="background-image:url('images/ExampleBackground3.jpg');">
+                <td align="center">
+                    <div class="card" onclick="showTeamPageLink(2)"style="background-image:url('images/ExampleBackground3.jpg');">
                         <a class="teamPageImage">23<br>81<br>C</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
-                <td>
-                    <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
+                <td align="center">
+                    <div class="card" onclick="showTeamPageLink(3)"style="background-image:url('images/ExampleBackground.jpg');">
                         <a class="teamPageImage">23<br>81<br>W</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
-                <td>
-                    <div class="card" style="background-image:url('images/ExampleBackground2.jpg');">
+                <td align="center">
+                    <div class="card" onclick="showTeamPageLink(4)"style="background-image:url('images/ExampleBackground2.jpg');">
                         <a class="teamPageImage">23<br>81<br>X</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
-                <td>
-                    <div class="card" style="background-image:url('images/ExampleBackground3.jpg');">
+                <td align="center">
+                    <div class="card" onclick="showTeamPageLink(5)"style="background-image:url('images/ExampleBackground3.jpg');">
                         <a class="teamPageImage">23<br>81<br>Y</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
-                <td>
-                    <div class="card" style="background-image:url('images/ExampleBackground.jpg');">
+                <td align="center">
+                    <div class="card" onclick="showTeamPageLink(6)"style="background-image:url('images/ExampleBackground.jpg');">
                         <a class="teamPageImage">23<br>81<br>Z</a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
@@ -250,31 +249,31 @@
                     <img src="images/slideshowImage1.jpg" alt="">
                 </div>
                 <div class="slide">
-                        <img style="" src="images/slideshowImage2.jpg" alt="">
+                        <img  src="images/slideshowImage2.jpg" alt="">
                     </div>
                 <div class="slide">
                         <img src="images/slideshowImage3.jpg" alt="">
                     </div>
                 <div class="slide">
-                        <img style="" src="images/slideshowImage4.jpg" alt="">
+                        <img  src="images/slideshowImage4.jpg" alt="">
                     </div>
                 <div class="slide">
                         <img src="images/slideshowImage5.jpg" alt="">
                     </div>
                     <div class="slide">
-                            <img style="" src="images/slideshowImage6.jpg" alt="">
+                            <img  src="images/slideshowImage6.jpg" alt="">
                         </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage7.jpg" alt="">
+                                <img  src="images/slideshowImage7.jpg" alt="">
                             </div>
                         <div class="slide">
                                 <img src="images/slideshowImage8.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage9.jpg" alt="">
+                                <img  src="images/slideshowImage9.jpg" alt="">
                             </div>
                         <div class="slide">
-                                <img style="" src="images/slideshowImage10.jpg" alt="">
+                                <img  src="images/slideshowImage10.jpg" alt="">
                             </div>
             </div>
 
@@ -324,6 +323,7 @@
                 sideNavOpen = true;
                 sideNavIterator = 0;
                 document.getElementById("toggleMenu").classList.add("is-active");
+                document.getElementById("sidenav").style.width = "120px";
                 openMenu = setInterval(openMenuOptions, 75);
                 document.getElementById("menuTeamList").style.marginLeft = "-30px";
 
@@ -332,13 +332,14 @@
                 sideNavOpen = false;
                 sideNavIterator = 7;
                 closeMenu = setInterval(closeMenuOptions, 75);
+                document.getElementById("sidenav").style.width = "0";
                 document.getElementById("menuTeamList").style.marginLeft = "-40px";
                 document.getElementById("toggleMenu").classList.remove("is-active");
             }
         }
 
         function openMenuOptions() {
-            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "13vw";
+            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "120px";
             sideNavIterator++;
             document.getElementById("toggleMenu").disabled = true;
             if (sideNavIterator == 8) {
@@ -370,28 +371,38 @@
                 document.getElementById("topButton").style.bottom = "0";
             }
         }
-        cardIterator = 0
         counter = 0;
-        moveDist = document.documentElement.clientWidth * 0.99;
         
         function moveCardsLeft() {
             if (counter > 0) {
+                document.getElementsByClassName("card")[counter].style.opacity = "0";
+                document.getElementsByClassName("card")[counter].style.height = "0";
                 counter--;
-                cardIterator += moveDist;
-                document.getElementById("cardContainer").style.left = cardIterator;
+                document.getElementsByClassName("card")[counter].style.opacity = "1";
+                document.getElementsByClassName("card")[counter].style.height = "400px";
+
             }
         }
 
         function moveCardsRight() {
             if (counter < 6) {
+                document.getElementsByClassName("card")[counter].style.opacity = "0";
+                document.getElementsByClassName("card")[counter].style.height = "0";
+
                 counter++;
-                cardIterator -= moveDist;
-                document.getElementById("cardContainer").style.left = cardIterator;
+                document.getElementsByClassName("card")[counter].style.opacity = "1";
+                document.getElementsByClassName("card")[counter].style.height = "400px";
+
             }
         }
 
         function revealCards() {
             document.getElementById("teamsBackgroundTitle").style.height = 0;
+        }
+        function showTeamPageLink(i) {
+            document.getElementsByClassName("TeamPageImage")[i].style.backgroundColor = "black";
+            document.getElementsByClassName("TeamPageLink")[i].style.transform = "translateY(10px)";
+            document.getElementsByClassName("TeamPageLink")[i].style.opacity = "1";
         }
     </script>
 </body>
