@@ -28,12 +28,12 @@ body::-webkit-scrollbar {
 
 @font-face {
     font-family: "neutra";
-    src: url("NeutraText-book.otf") format("opentype");
+    src: url("neutratext-book.otf") format("opentype");
 }
 
 @font-face {
     font-family: "neutra-bold";
-    src: url("NeutraText-bold.otf") format("opentype");
+    src: url("neutratext-bold.otf") format("opentype");
 }
 
 @font-face {
@@ -189,7 +189,7 @@ input[name="r"] {
 
 #vexInfoSection {
     width: 100%;
-    height: 100%;
+    height: 700px;
 }
 
 #vexInfoSection p {
@@ -265,7 +265,7 @@ input[name="r"] {
 
 #teamsContainer {
     width: 100%;
-    height: 90%;
+    height: 600px;
     background-color: rgb(170, 7, 35);
     position: relative;
     border-bottom: 10px solid rgb(249, 211, 139);
@@ -305,16 +305,23 @@ input[name="r"] {
 .card {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     transition: 0.3s;
-    width: 275px;
-    height: 400px;
     border-radius: 10px 10px;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    margin-top: 20px;
     margin-left: 135px;
-    text-align: center;
+    text-align:center;
     display: inline-block;
+    opacity:0;
+    height:0;        
+    margin:0;
+    margin-top:60px;
+    width:800px;
     
+}
+
+#cardContainer td {
+    width:100%;
+    position:absolute;
 }
 
 .card:hover {
@@ -414,13 +421,11 @@ input[name="r"] {
 
 .contactText1 {
     position: absolute;
-    float: right;
     color: rgb(249, 211, 139);
     font-size: 15px;
     right: 40px;
     top: 25px;
     z-index: 100;
-    height: 16px;
     overflow: hidden;
     opacity: 1;
     transition: 0.2s ease-in-out;
@@ -720,8 +725,279 @@ input[name="r"] {
     font-size:16px;
 }
 
+@media only screen and (min-width:1441px){
 
+    .footer {
+        width: 100%;
+        height: 18.3vw;
+        border-top: 0.73vw solid rgb(249, 211, 139);
+    }
+    
+    
+    .footer .logo {
+        margin-top: 2.5vw;
+        border: 0.2vw solid rgb(249, 211, 139);
+        padding: 0.4vw;
+        font-size: 1.1vw;
+    }
+    
+    .footer img {
+        width: 4vw;
+        height: 4vw;
+        margin-top: 4vw;
+        padding: 1.1vw;
+    }
+    
+    .slideshowContainer {
+        height: 66vw;
+        width: 100vw;
+    }
 
+    .slideNavigation {
+        bottom: 20px;
+    }
+    
+    .bar {
+        width: 4vw;
+        height: 0.8vw;
+        border: 0.2vw solid rgb(249, 211, 139);
+        margin: 0.45vw;
+    }
+    #towerTakeoverYT {
+        width: 41vw;
+        height: 23.1vw;
+        border-radius: 9px;
+        margin-top: 40px;
+    }
+    
+    #vexInfoSection {
+        height: 51.2vw;
+    }
+    
+    #vexInfoSection p {
+        font-size: 1.75vw;
+    }
+    
+    #vexInfoSection img {
+        width: 30vw;
+        height: 30vw;
+        margin-left:145%;
+        margin-top: -6.6vw;
+    }
+  
+    .pulsate {
+        bottom:2.6vw;
+        width:5vw;
+        height:5vw;
+        transform:translateX(-2.5vw);
+    }
+
+    #teamsContainer {
+        width: 100%;
+        height: 43.9vw;
+        border-bottom: 0.73vw solid rgb(249, 211, 139);
+    }
+
+    #teamsBackgroundTitle h1 {
+        font-size: 18.3vw;
+        margin-left: 14.6vw;
+        margin-top: -2.6vw;
+    }
+    
+    #teamsBackgroundTitle h2 {
+        font-size: 7.3vw;
+        margin-top: 4vw;
+        margin-left: 14.6vw;
+    }
+    
+    .card {
+        margin-top:13.5vw;
+        width:1200px;
+    }
+    
+    .moveTeamsButtonLeft {
+        left: 4vw;
+        font-size: 4vw;
+    }
+    
+    .moveTeamsButtonRight {
+        right: 4vw;
+        font-size: 4vw;
+    }
+
+    .teamPageLink {  
+        font-size: 16px;
+        border-radius: 5px;     
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .teamLogo {
+        top: -1vw;
+        border: 0.2vw solid rgb(249, 211, 139);
+        padding: 0.4vw;
+        padding-top: 0.15vw;
+        padding-bottom:0.15vw;
+        font-size: 1.1vw;
+    }
+    
+    .contactText1 {
+        font-size: 1.1vw;
+        right: 2.9vw;
+        top: 1.8vw;
+        border-radius:0.36vw;
+        padding:0.75vw;
+    }
+
+    #sidenav {
+        top: 34%;
+        left: 3.3vw;
+    }
+    
+    .sidenavContent {
+        line-height: 2.2vw;
+    }
+    
+    .link {   
+        font-size: 1.1vw;
+    }
+    
+    .link:hover {
+        font-size: 1.2vw;
+        padding-left:0.4vw;
+    }
+    
+    .sidenavContent .activeLink {
+        font-size: 2.2vw;
+        padding-left:0.4vw;
+    }
+
+    #menuTeamList {
+        top: 34%;
+        width:2.2vw;
+        line-height:2.2vw;
+        border-radius:0 10px 10px 0;
+        padding:0.4vw;
+        margin-left:-3vw;
+    }
+    #menuTeamList a {
+        font-size:1.5vw;
+    }
+    
+    
+    .largeTitle {
+        margin-top: 20px;
+        font-size: 5.2vw;
+    }
+    
+    .thinTitle {
+        margin-top: -45px;
+        margin-right: 2.5%;
+        font-size: 17.6vw;
+        letter-spacing:40px;
+    }
+    
+    .robotImage {
+        margin-top: -23vw;
+        width: 18vw;
+        height: 18vw;
+    }
+ 
+    .topnav {
+        z-index: 100;
+    }
+    
+    #topButton {
+        padding: 1vw;
+        bottom: 2vw;
+        right: 2vw;
+        bottom: -4vw;
+    }
+    
+    .vexText {
+        font-size:3vw;
+    }
+    /* Line stuff */
+    
+    .line {
+        height: 0.2vw;
+        margin-left: 2.5vw;
+    }
+    
+    #toggleMenu:hover .line {
+        width:3.6vw;
+    }
+   
+    #toggleMenu {
+        margin-left: 1.8vw;
+        margin-top: 2vw;
+        font-size: 1.3vw;
+    }
+    
+    #menuButton {
+        margin-left: 2.5vw;
+    }
+    
+    .vex2019text {
+        font-size: 1.5vw;
+        right: 3vw;
+        bottom: 2.3vw;
+        
+    }
+    .vexInfoText1 a .vexInfoText2 a {
+        font-size:1.17vw;
+    }
+    .vexInfoText2 {
+        margin-top:20vw;
+    }
+    .card .letter {
+        position:absolute;
+        left:50%;
+        top:125px;
+        font-size:350px;
+    }
+    .card .teamName {
+        position:absolute;
+        left:50%;
+        top:25px;
+        font-size:200px;
+        line-height:150px;
+        transform:translateX(-200px);
+    }
+    
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+    width: 2vw;
+    height: 0.3vw;
+}
+.hamburger-inner::before {
+    top: -0.6vw;
+}
+
+.hamburger-inner::after {
+    bottom: -0.6vw;
+}
+}
+
+@media only screen and (min-width:1025px){
+    .card .letter {
+        position:absolute;
+        left:50%;
+        top:125px;
+        font-size:350px;
+    }
+    .card .teamName {
+        position:absolute;
+        left:50%;
+        top:25px;
+        font-size:200px;
+        line-height:150px;
+        transform:translateX(-200px);
+    }
+    #vexInfoSection .texture{
+        height:1000px;
+    }
+}
 
 @media only screen and (max-width:1024px) {
     #sidenav {
@@ -767,7 +1043,6 @@ input[name="r"] {
     }
     .contactText1 {
         font-size: 15px;
-        height: 16px;
     }
     #vexInfoSection p {
         font-size: 20px;
@@ -813,6 +1088,7 @@ input[name="r"] {
         opacity:0;
         height:0;        margin:0;
         margin-top:20px;
+        width:275px;
     }
     #cardContainer td {
         width:100%;
@@ -883,12 +1159,14 @@ input[name="r"] {
     #toggleMenu:hover .line {
         width: 45px;
     }
+    #menubutton {
+        position:relative; 
+    }
     .teamLogo {
         font-size: 10px;
     }
     .contactText1 {
         font-size: 10px;
-        height: 11px;
         right:20px;
         border-radius:3px;
         padding:5px;
@@ -974,8 +1252,8 @@ input[name="r"] {
         position:absolute;
     }
     .bar {
-        width: 12px;
-        height: 5px;
+        width: 4.5vw;
+        height: 1.6vw;
 
     }
     
@@ -1022,5 +1300,19 @@ display:none;
 .hamburger-inner::after {
     width: 20px;
     height: 2px;
+}
+.hamburger-inner::before {
+    top: -5px;
+}
+
+.hamburger-inner::after {
+    bottom: -5px;
+}
+#menuButton {
+    margin-left: 25px;
+
+}
+.line {
+    margin-left: 25px;
 }
 }

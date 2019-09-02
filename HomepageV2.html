@@ -122,6 +122,9 @@
     <script>
     var teamListOpen = false;
     function toggleTeamsList() {
+    var pageWidth = document.documentElement.clientWidth;
+
+    if(pageWidth <= 1440) {
         if(!teamListOpen) {
         document.getElementById("menuTeamList").style.marginLeft = "0";
         teamListOpen = true;
@@ -130,6 +133,17 @@
         document.getElementById("menuTeamList").style.marginLeft = "-30px";
         teamListOpen = false;
     }
+}
+else {
+        if(!teamListOpen) {
+        document.getElementById("menuTeamList").style.marginLeft = "0";
+        teamListOpen = true;
+    }
+    else {
+        document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
+        teamListOpen = false;
+    }
+}
 }
     </script>
 
@@ -167,7 +181,7 @@
 
         <div id="teamsBackgroundTitle">
 
-            <h2>VIEW</h2><br>
+            <h2>VIEW</h2><br><br>
             <h1>TEAMS</h1>
             <center>
                 <button onclick="revealCards()" class="pulsate"><img src="images/back-to-top-arrow.png" class="pulsate"></button>
@@ -182,48 +196,48 @@
 
                 <td align="center">
                     <div class="card" onclick="showTeamPageLink(0)"style="opacity:1;height:400px;background-image:url('images/ExampleBackground.jpg');">
-                        <a class="teamPageImage">23<br>81<br>A</a>
-                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">A</span></a>
+                        <a href="2381A.ca" class="teamPageLink">Visit Page</a>
                     </div>
                 </td>
                 <td align="center">
                     <div class="card" onclick="showTeamPageLink(1)"style="background-image:url('images/ExampleBackground2.jpg');">
-                        <a class="teamPageImage">23<br>81<br>B</a>
-                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">B</span></a>
+                        <a href="2381B.ca" class="teamPageLink">Visit Page</a>
                     </div>
                 </td>
                 <td align="center">
                     <div class="card" onclick="showTeamPageLink(2)"style="background-image:url('images/ExampleBackground3.jpg');">
-                        <a class="teamPageImage">23<br>81<br>C</a>
+                        <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">C</span></a>
                         <a href="2381C.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td align="center">
                     <div class="card" onclick="showTeamPageLink(3)"style="background-image:url('images/ExampleBackground.jpg');">
-                        <a class="teamPageImage">23<br>81<br>W</a>
-                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">W</span></a>
+                        <a href="2381W.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td align="center">
                     <div class="card" onclick="showTeamPageLink(4)"style="background-image:url('images/ExampleBackground2.jpg');">
-                        <a class="teamPageImage">23<br>81<br>X</a>
-                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">X</span></a>
+                        <a href="2381X.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td align="center">
                     <div class="card" onclick="showTeamPageLink(5)"style="background-image:url('images/ExampleBackground3.jpg');">
-                        <a class="teamPageImage">23<br>81<br>Y</a>
-                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">Y</span></a>
+                        <a href="2381Y.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
                 <td align="center">
                     <div class="card" onclick="showTeamPageLink(6)"style="background-image:url('images/ExampleBackground.jpg');">
-                        <a class="teamPageImage">23<br>81<br>Z</a>
-                        <a href="2381C.ca" class="teamPageLink">Visit Page</a>
+                        <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">Z</span></a>
+                        <a href="2381Z.ca" class="teamPageLink">Visit Page</a>
 
                     </div>
                 </td>
@@ -323,23 +337,47 @@
                 sideNavOpen = true;
                 sideNavIterator = 0;
                 document.getElementById("toggleMenu").classList.add("is-active");
-                document.getElementById("sidenav").style.width = "120px";
+                var pageWidth = document.documentElement.clientWidth;
+                if (pageWidth <= 1440) {
+                    document.getElementById("sidenav").style.width = "120px";
+                }
+                else {
+                    document.getElementById("sidenav").style.width = "8.7vw";
+                }
                 openMenu = setInterval(openMenuOptions, 75);
+                var pageWidth = document.documentElement.clientWidth;
+                if (pageWidth <= 1440) {
                 document.getElementById("menuTeamList").style.marginLeft = "-30px";
+                }
+                else {
+                    document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
 
+                }
 
             } else {
                 sideNavOpen = false;
                 sideNavIterator = 7;
                 closeMenu = setInterval(closeMenuOptions, 75);
                 document.getElementById("sidenav").style.width = "0";
+                var pageWidth = document.documentElement.clientWidth;
+                if (pageWidth <= 1440) {
                 document.getElementById("menuTeamList").style.marginLeft = "-40px";
-                document.getElementById("toggleMenu").classList.remove("is-active");
+                }
+                else {
+                    document.getElementById("menuTeamList").style.marginLeft = "-3vw";
+
+                }                document.getElementById("toggleMenu").classList.remove("is-active");
             }
         }
 
         function openMenuOptions() {
-            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "120px";
+            var pageWidth = document.documentElement.clientWidth;
+                if (pageWidth <= 1440) {
+                    document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "120px";
+                }
+                else {
+                    document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "8.7vw";
+                }
             sideNavIterator++;
             document.getElementById("toggleMenu").disabled = true;
             if (sideNavIterator == 8) {
