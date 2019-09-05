@@ -44,7 +44,6 @@ body {
 .footer {
     width: 100%;
     height: 250px;
-    background-color: rgb(170, 7, 35);
     position: relative;
     border-top: 10px solid rgb(249, 211, 139);
 }
@@ -91,8 +90,8 @@ body {
     
 .footer img {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
     margin-top: 50px;
     padding: 15px;
 }
@@ -219,7 +218,6 @@ input[name="r"] {
     z-index: 200;
     width: 400px;
     height: 400px;
-    top:-90px;
 }
 
 @keyframes pulse_animation {
@@ -273,6 +271,7 @@ input[name="r"] {
     z-index: 200;
     position: absolute;
     overflow: hidden;
+    text-align:left;
     transition: 2.5s ease-in-out;
 }
 
@@ -296,7 +295,7 @@ input[name="r"] {
     margin-left: 200px;
 }
 
-.card {
+#cardContainer .card {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     transition: 0.3s;
     border-radius: 10px 10px;
@@ -306,6 +305,7 @@ input[name="r"] {
     text-align:center;
     display: inline-block;
     opacity:0;
+    border:none;
     height:0;        
     margin:0;
     margin-top:60px;
@@ -318,23 +318,23 @@ input[name="r"] {
     position:absolute;
 }
 
-.card:hover {
+#cardContainer .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.65);
 }
 .vexInfoText1  {
-    width:40%;    
-    margin-left:4%;
-    position:absolute;
+    text-align: left;
+    padding-left:4% !important;
+    padding-top:4%; 
 }
  .vexInfoTextbox {
-        line-height:1.15 ;
+        line-height:1.15;
     }
 .vexInfoText2 {
-    width:40%;
-    margin-left:55%;
-    margin-top:200px;
     text-align:right;
-    position:absolute;
+    padding-right:4% !important; 
+    padding-top: 4%;
+    padding-bottom: 4%;
+
 }
 
 .moveTeamsButtonLeft {
@@ -375,11 +375,11 @@ input[name="r"] {
     line-height: 125px;
 }
 
-.card:hover .teamPageImage {
+#cardContainer .card:hover .teamPageImage {
     background-color: black;
 }
 
-.card:hover .teamPageLink {
+#cardContainer .card:hover .teamPageLink {
     transform: translateY(10px);
     opacity: 1;
 }
@@ -399,8 +399,8 @@ input[name="r"] {
 }
 
 #splash {
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .teamLogo {
@@ -597,7 +597,7 @@ input[name="r"] {
 }
 
 #background-red {
-    background-color: rgb(150, 10, 30);
+    background-color: rgb(170, 7, 35);
 }
 #texture {
     background-image: url("images/background-texture.png");
@@ -767,7 +767,9 @@ input[name="r"] {
 .vexInfoText1 a .vexInfoText2 a {
     font-size:16px;
 }
-
+.infoCol{
+        padding-bottom: 10%;
+    }
 @media only screen and (min-width:1441px){
 
     .footer {
@@ -812,9 +814,6 @@ input[name="r"] {
         border-radius: 9px;
     }
     
-    #vexInfoSection {
-        height: 51.2vw;
-    }
     
     #vexInfoSection p {
         font-size: 1.75vw;
@@ -852,7 +851,7 @@ input[name="r"] {
         margin-left: 14.6vw;
     }
     
-    .card {
+    #cardContainer .card {
         margin-top:13.5vw;
         width:1200px;
     }
@@ -988,16 +987,13 @@ input[name="r"] {
     .vexInfoText1 a .vexInfoText2 a {
         font-size:1.17vw;
     }
-    .vexInfoText2 {
-        margin-top:20vw;
-    }
-    .card .letter {
+    #cardContainer .card .letter {
         position:absolute;
         left:50%;
         top:125px;
         font-size:350px;
     }
-    .card .teamName {
+    #cardContainer .card .teamName {
         position:absolute;
         left:50%;
         top:25px;
@@ -1022,19 +1018,27 @@ input[name="r"] {
 }
 
 @media only screen and (min-width:1025px){
-    .card .letter {
+    #cardContainer .card .letter {
         position:absolute;
         left:50%;
         top:125px;
         font-size:350px;
     }
-    .card .teamName {
+    #cardContainer .card .teamName {
         position:absolute;
         left:50%;
         top:25px;
         font-size:200px;
         line-height:150px;
         transform:translateX(-200px);
+    }
+    #vexInfoSection img {
+        width: 32.55vw;
+        height: 32.55vw;
+        top:-90px;
+    }
+    #toprow {
+        padding-bottom: 0
     }
     #vexInfoSection .texture{
         height:1000px;
@@ -1056,11 +1060,11 @@ input[name="r"] {
         font-size: 16px;
     } 
     #splash {
-        height:500px;
+        height:550px;
     }
     .vex2019text {
         position: absolute;
-        top:450px;
+        top:500px;
     }
 
 #splash .texture {
@@ -1095,9 +1099,6 @@ input[name="r"] {
     .thinTitle {
         font-size: 200px;
     }
-    #vexInfoSection {
-        height: 675px;
-    }
     #towerTakeoverYT {
         width: 40.36vw;
         height: 22.79vw;
@@ -1105,6 +1106,7 @@ input[name="r"] {
     #vexInfoSection img {
         width: 32.55vw;
         height: 32.55vw;
+        
     }
     #teamsContainer {
         height: 500px;
@@ -1123,7 +1125,7 @@ input[name="r"] {
         height: 66vw;
         width: 100vw;
     }
-    .card {
+    #cardContainer .card {
         opacity:0;
         height:0;        margin:0;
         margin-top:20px;
@@ -1138,6 +1140,10 @@ input[name="r"] {
 
 
 @media only screen and (max-width:767px) {
+    #partRobotics{
+        display:none;
+    }
+    
     body{
         width:100%;
     }
@@ -1155,11 +1161,11 @@ input[name="r"] {
         font-size: 10px;
     } 
     #splash {
-        height:350px;
+        height:400px;
     }
     .vex2019text {
         position: absolute;
-        top:280px;
+        top:330px;
         font-size: 11px;
     }
     .vexText {
@@ -1173,16 +1179,16 @@ input[name="r"] {
     }
     .vexInfoText1 {
         text-align:center;
-        width:70%;
-        margin-left:15%;
-        position:relative;
+        padding-left:15% !important;
+        padding-right:15% !important;
+    }
+    .vexInfoTextbox {
+        width:100% !important;
     }
     .vexInfoText2 {
         text-align:center;
-        width:70%;
-        margin-left:15%;
-        margin-top:-50px;
-        position:relative;
+        padding-left:15% !important;
+        padding-right:15% !important;
     }
     .vexInfoText1 a {
         font-size:11px;
@@ -1190,7 +1196,6 @@ input[name="r"] {
    
     .vexInfoText2 a {
         font-size:11px;
-        margin-bottom:20px;
     }
     #toggleMenu {
         font-size: 11px;
@@ -1206,10 +1211,10 @@ input[name="r"] {
         font-size: 10px;
     }
     .contactText1 {
-        font-size: 10px;
+        font-size: 10px !important;
         right:20px;
-        border-radius:3px;
-        padding:5px;
+        border-radius:3px !important;
+        padding:5px !important;
     }
 
     .link:hover {
@@ -1278,7 +1283,7 @@ input[name="r"] {
         height: 66vw;
         width: 100vw;
     }
-    .card {
+    #cardContainer .card {
         opacity:0;
         height:0;        
         margin:0;
@@ -1304,6 +1309,7 @@ input[name="r"] {
 .footer .logo {
     margin-top: 10px;
     font-size: 10px;
+    z-index:1;
 }
 
 .footer img {

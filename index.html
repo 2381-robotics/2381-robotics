@@ -32,7 +32,14 @@
                 </div>
             </div>
             <div class='col-4' style='z-index:inherit;'>
-                <div class="teamLogo center ">2381 ROBOTICS</div>
+                <div class="teamLogo center ">
+                    <div id='2381' style='display:inline'>
+2381
+                    </div>
+                    <div id='partROBOTICS' style='display:inline'>
+                        ROBOTICS
+                    </div>
+                     </div>
             </div>
             <div class='col-4 mx-auto' style='z-index:inherit;'>
                 <button type="button" class="btn contactText1 btn-primary center-v" data-toggle="modal"
@@ -60,7 +67,7 @@
                 <tr>
                     <td>
                         <div class='link' id="TeamsTab" href="#Posts">TEAMS
-                
+
                         </div>
                     </td>
                 </tr>
@@ -71,7 +78,7 @@
                         </div>
                     </td>
                 </tr>
-                
+
                 <tr>
                     <td>
                         <div class='link' href="#Community">COMMUNITY
@@ -116,9 +123,9 @@
             <br>
             <a class="link" href="#2381C">Z</a>
         </div>
-        
-       
-        
+
+
+
     </div>
     <!--END: SIDE NAV-->
     <!--BEGIN: BACK TO TOP BUTTON-->
@@ -241,13 +248,13 @@
     <!-- BEGIN: PAGES -->
     <div class="pageContainer">
         <!--BEGIN: HOME-->
-        <section class='container-fluid pageSection' name='HOME'>
+        <section class='container-fluid pageSection' id='splash' name='HOME'>
             <!-- Half dark red -->
             <div class="background-overlay" id='background-red-dark'></div>
             <div class="background-overlay" id='background-red-light'></div>
             <div class="background-overlay" id='texture'></div>
 
-            <span class="vex2019text"><span style="font-size:40px;">VEX</span>
+            <span class="vex2019text"><span class="vexText">VEX</span>
                 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2019</span>
             <div class="jumbotron text-center" style='margin-bottom:0; margin-top:10vh; padding:2rem; background:none'>
                 <div class="largeTitle">KERNEL BYE'S</div>
@@ -271,459 +278,489 @@
                     <img src="images/robot.png" style='position:relative; height:100%'>
                 </div>
             </center>
-            </section>
+        </section>
 
-        <section class='container-fluid pageSection' style='height:auto' name='INFO'>
-
-
-
+        <section class='container-fluid pageSection' style='height:auto;' name='INFO'>
             <div id="vexInfoSection">
                 <div class="background-overlay background3"></div>
                 <div class="background-overlay background4"></div>
-                <div id="texture" class="background-overlay" ></div>
+                <div id="texture" class="background-overlay"></div>
                 <div class="container-fluid">
-                <div class="row" style="height:300px; padding-bottom: 0">
-                    <div class="col-md-6" style="text-align: left; padding-left:4%; padding-top:4%; ">
-                        <p class="vexInfoTextbox" style=" width:90%" >2381 Robotics is a club run at Colonel By Secondary School in Ottawa with multiple competitive
-                            teams
-                            working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a robotics
-                            competition for elementary through university students, where competitors are given a yearly challenge
-                            for which they must design, build, program, and drive a robot to complete the challenge as best as they
-                            can.</p>
+                    <div class="row" id='toprow' >
+                        <div class="col-md-6 col-sm-12 vexInfoText1">
+                            <p class="vexInfoTextbox" style=" width:90%">2381 Robotics is a club run at Colonel By
+                                Secondary School in Ottawa with multiple competitive
+                                teams
+                                working on robots for VEX EDR Robotics Competitions. The VEX Robotics Competition is a
+                                robotics
+                                competition for elementary through university students, where competitors are given a
+                                yearly challenge
+                                for which they must design, build, program, and drive a robot to complete the challenge
+                                as best as they
+                                can.</p>
                             <a href="https://www.vexrobotics.com/" target="_blank"
-                                style="color:rgb(249, 211, 139);font-family:'neutra';text-decoration: underline;">Click here to visit
+                                style="color:rgb(249, 211, 139);font-family:'neutra';text-decoration: underline;">Click
+                                here to visit
                                 their website</a>
-                    </div>
-                    <div class ='col-md-6'>
-                        <img src="images/towerTakeover.png">
-
-                    </div>
-                </div>
-                    <div class ='row' style="height:400px">
-                        <div class="col-md-6">
-<br>
-<iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class='col-md-6 col-sm-12'>
+                            <img src="images/towerTakeover.png">
 
                         </div>
-                    <div class="col-md-6" style="text-align: right; padding-right:4%; padding-top: 4%;">
-                         
-                            <p class="vexInfoTextbox">The 2019-2020 VEX Robotics Competition Tower Takeover is played on a 12’x12’ square field.
+                    </div>
+                    <div class='row'>
+                        <div class="col-md-6 col-sm-12 infoCol">
+                            <br>
+                            <iframe src="https://www.youtube.com/embed/_JVQOiw_OUU" id="towerTakeoverYT" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+                        </div>
+                        <div class="col-md-6 col-sm-12 infoCol vexInfoText2">
+                            <p class="vexInfoTextbox">The 2019-2020 VEX Robotics Competition Tower Takeover is played on
+                                a 12’x12’ square field.
                                 Two alliances,
-                                one “red” and one “blue”, composed of two teams each, compete in matches consisting of a fifteen second
-                                autonomous period, followed by a one minute and forty-five second driver controlled period. The object
-                                of the game is to attain a higher score than the opposing alliance by placing cubes in towers, or
+                                one “red” and one “blue”, composed of two teams each, compete in matches consisting of a
+                                fifteen second
+                                autonomous period, followed by a one minute and forty-five second driver controlled
+                                period. The object
+                                of the game is to attain a higher score than the opposing alliance by placing cubes in
+                                towers, or
                                 scoring cubes in goals.</p>
                             <a href="https://www.vexrobotics.com/vexedr/competition/vrc-current-game" target="_blank"
-                                style="color:rgb(249, 211, 139);font-family:'neutra';float:right;text-decoration: underline;">Click here
+                                style="color:rgb(249, 211, 139);font-family:'neutra';text-decoration: underline;">Click
+                                here
                                 for more information</a>
+                        </div>
+
+
                     </div>
-                    
-                    
+
                 </div>
-               
             </div>
-            </div>
-            </section>
-            
-            <div id="teamsContainer">
-                <div class="texture"></div>
-            
+        </section>
+        <section class='container-fluid pageSection' style='height:auto; padding:0' name='TEAMS'>
+            <div class='background-overlay' id="texture"></div>
+            <div class='background-overlay' id="background-red"></div>
+
+
+            <div id="teamsContainer" style="background:none;">
+
                 <div id="teamsBackgroundTitle">
-            
+
                     <h2 style='font-size: 100px'>VIEW</h2><br><br>
                     <h1 style="font-size:250px">TEAMS</h1>
                     <center>
                         <button onclick="revealCards()" class="pulsate"><img src="images/back-to-top-arrow.png"
                                 class="pulsate"></button>
                     </center>
-            
+
                 </div>
-                <button class="moveTeamsButtonLeft" onclick="moveCardsLeft()">&#11164;</button>
-                <button class="moveTeamsButtonRight" onclick="moveCardsRight()">&#11166;</button>
+                <button class="moveTeamsButtonLeft" id="cardsLeftButton" onclick="moveCardsLeft()">&#11164;</button>
+                <button class="moveTeamsButtonRight" id="cardsRightButton" onclick="moveCardsRight()">&#11166;</button>
                 <table id="cardContainer">
-            
+
                     <tr>
-            
+
                         <td align="center">
                             <div class="card" onclick="showTeamPageLink(0)"
                                 style="opacity:1;height:400px;background-image:url('images/ExampleBackground.jpg');">
-                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">A</span></a>
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span
+                                        class="letter">A</span></a>
                                 <a href="2381A.ca" class="teamPageLink">Visit Page</a>
                             </div>
                         </td>
                         <td align="center">
                             <div class="card" onclick="showTeamPageLink(1)"
                                 style="background-image:url('images/ExampleBackground2.jpg');">
-                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">B</span></a>
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span
+                                        class="letter">B</span></a>
                                 <a href="2381B.ca" class="teamPageLink">Visit Page</a>
                             </div>
                         </td>
                         <td align="center">
                             <div class="card" onclick="showTeamPageLink(2)"
                                 style="background-image:url('images/ExampleBackground3.jpg');">
-                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">C</span></a>
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span
+                                        class="letter">C</span></a>
                                 <a href="2381C.ca" class="teamPageLink">Visit Page</a>
-            
+
                             </div>
                         </td>
                         <td align="center">
                             <div class="card" onclick="showTeamPageLink(3)"
                                 style="background-image:url('images/ExampleBackground.jpg');">
-                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">W</span></a>
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span
+                                        class="letter">W</span></a>
                                 <a href="2381W.ca" class="teamPageLink">Visit Page</a>
-            
+
                             </div>
                         </td>
                         <td align="center">
                             <div class="card" onclick="showTeamPageLink(4)"
                                 style="background-image:url('images/ExampleBackground2.jpg');">
-                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">X</span></a>
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span
+                                        class="letter">X</span></a>
                                 <a href="2381X.ca" class="teamPageLink">Visit Page</a>
-            
+
                             </div>
                         </td>
                         <td align="center">
                             <div class="card" onclick="showTeamPageLink(5)"
                                 style="background-image:url('images/ExampleBackground3.jpg');">
-                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">Y</span></a>
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span
+                                        class="letter">Y</span></a>
                                 <a href="2381Y.ca" class="teamPageLink">Visit Page</a>
-            
+
                             </div>
                         </td>
                         <td align="center">
                             <div class="card" onclick="showTeamPageLink(6)"
                                 style="background-image:url('images/ExampleBackground.jpg');">
-                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span class="letter">Z</span></a>
+                                <a class="teamPageImage"><span class="teamName">23<br>81</span><br><span
+                                        class="letter">Z</span></a>
                                 <a href="2381Z.ca" class="teamPageLink">Visit Page</a>
-            
+
                             </div>
                         </td>
                     </tr>
                 </table>
             </div>
-            
-            <div class="slideshowContainer">
-            
-                <div class="slideshow">
-                    <div class="slides">
-                        <input type="radio" name="r" id="r1" checked>
-                        <input type="radio" name="r" id="r2">
-                        <input type="radio" name="r" id="r3">
-                        <input type="radio" name="r" id="r4">
-                        <input type="radio" name="r" id="r5">
-                        <input type="radio" name="r" id="r6">
-                        <input type="radio" name="r" id="r7">
-                        <input type="radio" name="r" id="r8">
-                        <input type="radio" name="r" id="r9">
-                        <input type="radio" name="r" id="r10">
-                        <div class="slide s1">
-                            <img src="images/slideshowImage1.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage2.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage3.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage4.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage5.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage6.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage7.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage8.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage9.jpg" alt="">
-                        </div>
-                        <div class="slide">
-                            <img src="images/slideshowImage10.jpg" alt="">
-                        </div>
-                    </div>
-            
-                    <div class="slideNavigation">
-                        <label for="r1" class="bar"></label>
-                        <label for="r2" class="bar"></label>
-                        <label for="r3" class="bar"></label>
-                        <label for="r4" class="bar"></label>
-                        <label for="r5" class="bar"></label>
-                        <label for="r6" class="bar"></label>
-                        <label for="r7" class="bar"></label>
-                        <label for="r8" class="bar"></label>
-                        <label for="r9" class="bar"></label>
-                        <label for="r10" class="bar"></label>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer">
-                <div class="texture"></div>
-                <center>
-                    <div>
-                        <a href="#"><img src="images/instagramLogo.png"></a>
-                        <a href="#"><img src="images/githubLogo.png"></a>
-                        <a href="#"><img src="images/youtubeLogo.png"></a>
-                    </div>
-                    <div class="logo">2381 ROBOTICS</div>
-                </center>
-            
-            </div>
-            
-            <a href="#" id="topButton">
-                <img src="images/back-to-top-arrow.png" width="30px" height="30px">
-            </a>
+
+
 
         </section>
+        <section class='container-fluid pageSection' style='height:auto; padding:0' name='IMAGES'>
+
+        <div class="slideshowContainer" style="text-align: left;">
+            <div class="slideshow">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <input type="radio" name="r" id="r4">
+                    <input type="radio" name="r" id="r5">
+                    <input type="radio" name="r" id="r6">
+                    <input type="radio" name="r" id="r7">
+                    <input type="radio" name="r" id="r8">
+                    <input type="radio" name="r" id="r9">
+                    <input type="radio" name="r" id="r10">
+                    <div class="slide s1">
+                        <img src="images/slideshowImage1.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage2.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage3.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage4.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage5.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage6.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage7.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage8.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage9.jpg" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slideshowImage10.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="slideNavigation">
+                    <label for="r1" class="bar"></label>
+                    <label for="r2" class="bar"></label>
+                    <label for="r3" class="bar"></label>
+                    <label for="r4" class="bar"></label>
+                    <label for="r5" class="bar"></label>
+                    <label for="r6" class="bar"></label>
+                    <label for="r7" class="bar"></label>
+                    <label for="r8" class="bar"></label>
+                    <label for="r9" class="bar"></label>
+                    <label for="r10" class="bar"></label>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        
         <!--END: HOME-->
 
-        <!--BEGIN:ABOUT-->
-    <script>
-        $(function(){
-            $("#toggleMenu").click(function(){
-                toggleMenu()});
-        })
-        sideNavIterator = 0;
-        sideNavOpen = false;
 
-        window.onload = function () {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        function toggleMenu() {
-            $("#menuLine").toggleClass("fullLength");
-            $("toggleMenu").toggleClass("is-active");
-            if (!sideNavOpen) {
-                sideNavOpen = true;
-                sideNavIterator = 0;
-                document.getElementById("toggleMenu").classList.add("is-active");
+        <!--END: PAGES-->
+<!--BEGIN: FOOTER-->
+        <section class='container-fluid pageSection' style='height:auto; padding:0' name='FOOTER'>
+                <div class="background-overlay" id='background-red'></div>
+                <div class="background-overlay" id='texture'></div>
+
+<div class="footer">
+    <div style='z-index:1'>
+        <div>
+            <a href="#"><img src="images/instagramLogo.png"></a>
+            <a href="#"><img src="images/githubLogo.png"></a>
+            <a href="#"><img src="images/youtubeLogo.png"></a>
+        </div>
+    </div>
+    <div class="logo" style='z-index:1221'>2381 ROBOTICS</div>
+
+</div>
+</section>
+
+
+<a href="#" id="topButton">
+    <img src="images/back-to-top-arrow.png" width="30px" height="30px">
+</a>
+<!--END: FOOTER-->
+        <!--BEGIN: JS-->
+
+        <script src="./Nodes/jquery.js"></script>
+        <script src="https://kit.fontawesome.com/8d41975750.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script>
+            $(function () {
+                $("#TeamsTab").click((hover) => {
+                    toggleTeamsList();
+                })
+            });
+            var teamListOpen = false;
+            function toggleTeamsList() {
                 var pageWidth = document.documentElement.clientWidth;
+                $("#TeamsTab").toggleClass("link-is-active");
                 if (pageWidth <= 1440) {
-                    document.getElementById("sidenav").style.width = "120px";
+                    if (!teamListOpen) {
+                        document.getElementById("menuTeamList").style.marginLeft = "0";
+                        teamListOpen = true;
+                    }
+                    else {
+                        document.getElementById("menuTeamList").style.marginLeft = "-30px";
+                        teamListOpen = false;
+                    }
                 }
                 else {
-                    document.getElementById("sidenav").style.width = "8.7vw";
+                    if (!teamListOpen) {
+                        document.getElementById("menuTeamList").style.marginLeft = "0";
+                        teamListOpen = true;
+                    }
+                    else {
+                        document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
+                        teamListOpen = false;
+                    }
                 }
-                openMenu = setInterval(openMenuOptions, 75);
-                var pageWidth = document.documentElement.clientWidth;
-                if (pageWidth <= 1440) {
-                    document.getElementById("menuTeamList").style.marginLeft = "-30px";
-                }
-                else {
-                    document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
-
-                }
-
-            } else {
-                sideNavOpen = false;
-                sideNavIterator = 7;
-                closeMenu = setInterval(closeMenuOptions, 75);
-                document.getElementById("sidenav").style.width = "0";
-                var pageWidth = document.documentElement.clientWidth;
-                if (pageWidth <= 1440) {
-                    document.getElementById("menuTeamList").style.marginLeft = "-40px";
-                }
-                else {
-                    document.getElementById("menuTeamList").style.marginLeft = "-3vw";
-
-                } document.getElementById("toggleMenu").classList.remove("is-active");
             }
-        }
-
-        function openMenuOptions() {
-            var pageWidth = document.documentElement.clientWidth;
-            if (pageWidth <= 1440) {
-                document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "120px";
-            }
-            else {
-                document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "8.7vw";
-            }
-            sideNavIterator++;
-            document.getElementById("toggleMenu").disabled = true;
-            if (sideNavIterator == 8) {
-                clearInterval(openMenu)
-                document.getElementById("toggleMenu").disabled = false;
-            }
-        }
-
-        function closeMenuOptions() {
-            document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "0px";
-            sideNavIterator--;
-            document.getElementById("toggleMenu").disabled = true;
-            if (sideNavIterator < 0) {
-                clearInterval(closeMenu)
-                document.getElementById("toggleMenu").disabled = false;
-            }
-        }
-
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-                document.getElementById("topButton").style.opacity = "1";
-                document.getElementById("topButton").style.bottom = "25px";
-            } else {
-                document.getElementById("topButton").style.opacity = "0";
-                document.getElementById("topButton").style.bottom = "0";
-            }
-        }
-        counter = 0;
-
-        function moveCardsLeft() {
-            if (counter > 0) {
-                document.getElementsByClassName("card")[counter].style.opacity = "0";
-                document.getElementsByClassName("card")[counter].style.height = "0";
-                counter--;
-                document.getElementsByClassName("card")[counter].style.opacity = "1";
-                document.getElementsByClassName("card")[counter].style.height = "400px";
-
-            }
-        }
-
-        function moveCardsRight() {
-            if (counter < 6) {
-                document.getElementsByClassName("card")[counter].style.opacity = "0";
-                document.getElementsByClassName("card")[counter].style.height = "0";
-
-                counter++;
-                document.getElementsByClassName("card")[counter].style.opacity = "1";
-                document.getElementsByClassName("card")[counter].style.height = "400px";
-
-            }
-        }
-
-        function revealCards() {
-            document.getElementById("teamsBackgroundTitle").style.height = 0;
-        }
-        function showTeamPageLink(i) {
-            document.getElementsByClassName("TeamPageImage")[i].style.backgroundColor = "black";
-            document.getElementsByClassName("TeamPageLink")[i].style.transform = "translateY(10px)";
-            document.getElementsByClassName("TeamPageLink")[i].style.opacity = "1";
-        }
-    </script>
-        <!--END:ABOUT-->
-
-    <!--END: PAGES-->
-
-    <!--BEGIN: JS-->
-
-    <script src="./Nodes/jquery.js"></script>
-    <script src="https://kit.fontawesome.com/8d41975750.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $("#TeamsTab").click((hover) => {
-                toggleTeamsList();
+        </script>
+        <script>
+            $(function () {
+                $("#toggleMenu").click(function () {
+                    toggleMenu()
+                });
+                $("#slide1").on("slide.bs.carousel", function (e) {
+                    var direction = (e.direction == "left") ? "next" : "prev";
+                    console.log(direction);
+                    $("#slide2").carousel(direction);
+                    $("#slide-text").carousel(direction)
+                });
+                $(".aspect-ratio-height").each(function () {
+                    $(this).css("width", ($(this).attr("ratio")) * ($(this).height()) + "px");
+                    console.log(($(this).attr("ratio")) * ($(this).css("height")));
+                });
             })
-        });
-        var teamListOpen = false;
-        function toggleTeamsList() {
-            var pageWidth = document.documentElement.clientWidth;
-            $("#TeamsTab").toggleClass("link-is-active");
-            if (pageWidth <= 1440) {
-                if (!teamListOpen) {
-                    document.getElementById("menuTeamList").style.marginLeft = "0";
-                    teamListOpen = true;
+            sideNavIterator = 0;
+            sideNavOpen = false;
+
+            // window.onload = function () {
+            //     document.body.scrollTop = 0;
+            //     document.documentElement.scrollTop = 0;
+            // }
+            function toggleMenu() {
+                $("#menuLine").toggleClass("fullLength");
+                $("#toggleMenu").toggleClass("is-active");
+                if (!sideNavOpen) {
+                    sideNavOpen = true;
+                    sideNavIterator = 0;
+                    openMenu = setInterval(openMenuOptions, 25);
+                } else {
+                    sideNavOpen = false;
+                    sideNavIterator = 6;
+                    closeMenu = setInterval(closeMenuOptions, 25);
+                }
+            }
+
+            function openMenuOptions() {
+                document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "200px";
+                sideNavIterator++;
+                document.getElementById("toggleMenu").disabled = true;
+                if (sideNavIterator == 7) {
+                    clearInterval(openMenu)
+                    document.getElementById("toggleMenu").disabled = false;
+                }
+            }
+
+            function closeMenuOptions() {
+                document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "0px";
+                sideNavIterator--;
+                document.getElementById("toggleMenu").disabled = true;
+                if (sideNavIterator < 0) {
+                    clearInterval(closeMenu)
+                    document.getElementById("toggleMenu").disabled = false;
+                }
+            }
+
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+                    document.getElementById("topButton").style.opacity = "1";
+                    document.getElementById("topButton").style.bottom = "25px";
+                } else {
+                    document.getElementById("topButton").style.opacity = "0";
+                    document.getElementById("topButton").style.bottom = "0";
+                }
+            }
+
+        </script>
+        <script>
+            $(function () {
+                $("#toggleMenu").click(function () {
+                    toggleMenu()
+                });
+            })
+            sideNavIterator = 0;
+            sideNavOpen = false;
+
+            window.onload = function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            function toggleMenu() {
+                $("#menuLine").toggleClass("fullLength");
+                $("toggleMenu").toggleClass("is-active");
+                if (!sideNavOpen) {
+                    sideNavOpen = true;
+                    sideNavIterator = 0;
+                    document.getElementById("toggleMenu").classList.add("is-active");
+                    var pageWidth = document.documentElement.clientWidth;
+                    if (pageWidth <= 1440) {
+                        document.getElementById("sidenav").style.width = "120px";
+                    }
+                    else {
+                        document.getElementById("sidenav").style.width = "8.7vw";
+                    }
+                    openMenu = setInterval(openMenuOptions, 75);
+                    var pageWidth = document.documentElement.clientWidth;
+                    if (pageWidth <= 1440) {
+                        document.getElementById("menuTeamList").style.marginLeft = "-30px";
+                    }
+                    else {
+                        document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
+
+                    }
+
+                } else {
+                    sideNavOpen = false;
+                    sideNavIterator = 7;
+                    closeMenu = setInterval(closeMenuOptions, 75);
+                    document.getElementById("sidenav").style.width = "0";
+                    var pageWidth = document.documentElement.clientWidth;
+                    if (pageWidth <= 1440) {
+                        document.getElementById("menuTeamList").style.marginLeft = "-40px";
+                    }
+                    else {
+                        document.getElementById("menuTeamList").style.marginLeft = "-3vw";
+
+                    } document.getElementById("toggleMenu").classList.remove("is-active");
+                }
+            }
+
+            function openMenuOptions() {
+                var pageWidth = document.documentElement.clientWidth;
+                if (pageWidth <= 1440) {
+                    document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "120px";
                 }
                 else {
-                    document.getElementById("menuTeamList").style.marginLeft = "-30px";
-                    teamListOpen = false;
+                    document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "8.7vw";
+                }
+                sideNavIterator++;
+                document.getElementById("toggleMenu").disabled = true;
+                if (sideNavIterator == 8) {
+                    clearInterval(openMenu)
+                    document.getElementById("toggleMenu").disabled = false;
                 }
             }
-            else {
-                if (!teamListOpen) {
-                    document.getElementById("menuTeamList").style.marginLeft = "0";
-                    teamListOpen = true;
+
+            function closeMenuOptions() {
+                document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "0px";
+                sideNavIterator--;
+                document.getElementById("toggleMenu").disabled = true;
+                if (sideNavIterator < 0) {
+                    clearInterval(closeMenu)
+                    document.getElementById("toggleMenu").disabled = false;
                 }
-                else {
-                    document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
-                    teamListOpen = false;
+            }
+
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+                    document.getElementById("topButton").style.opacity = "1";
+                    document.getElementById("topButton").style.bottom = "25px";
+                } else {
+                    document.getElementById("topButton").style.opacity = "0";
+                    document.getElementById("topButton").style.bottom = "0";
                 }
             }
-        }
-    </script>
-    <script>
-        $(function () {
-            $("#toggleMenu").click(function () {
-                toggleMenu()
-            });
-            $("#slide1").on("slide.bs.carousel", function (e) {
-                var direction = (e.direction == "left") ? "next" : "prev";
-                console.log(direction);
-                $("#slide2").carousel(direction);
-                $("#slide-text").carousel(direction)
-            });
-            $(".aspect-ratio-height").each(function(){
-                $(this).css("width", ($(this).attr("ratio"))* ($(this).height()) + "px");
-                console.log(($(this).attr("ratio")) * ($(this).css("height")));
-            });
-        })
-        sideNavIterator = 0;
-        sideNavOpen = false;
+            var counter = 0;
 
-        // window.onload = function () {
-        //     document.body.scrollTop = 0;
-        //     document.documentElement.scrollTop = 0;
-        // }
-        function toggleMenu() {
-            $("#menuLine").toggleClass("fullLength");
-            $("#toggleMenu").toggleClass("is-active");
-            if (!sideNavOpen) {
-                sideNavOpen = true;
-                sideNavIterator = 0;
-                openMenu = setInterval(openMenuOptions, 25);
-            } else {
-                sideNavOpen = false;
-                sideNavIterator = 6;
-                closeMenu = setInterval(closeMenuOptions, 25);
+
+            $(function () {
+                $("#cardsLeftButton").click(moveCardsLeft());
+                $("#cardsRightButton").click(moveCardsRight());
+            })
+            function moveCardsLeft() {
+                if (counter > 0) {
+                    document.getElementsByClassName("card")[counter].style.opacity = "0";
+                    document.getElementsByClassName("card")[counter].style.height = "0";
+                    counter--;
+                    document.getElementsByClassName("card")[counter].style.opacity = "1";
+                    document.getElementsByClassName("card")[counter].style.height = "400px";
+
+                }
             }
-        }
 
-        function openMenuOptions() {
-            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "200px";
-            sideNavIterator++;
-            document.getElementById("toggleMenu").disabled = true;
-            if (sideNavIterator == 7) {
-                clearInterval(openMenu)
-                document.getElementById("toggleMenu").disabled = false;
+            function moveCardsRight() {
+                if (counter < 6) {
+                    document.getElementsByClassName("card")[counter].style.opacity = "0";
+                    document.getElementsByClassName("card")[counter].style.height = "0";
+
+                    counter++;
+                    document.getElementsByClassName("card")[counter].style.opacity = "1";
+                    document.getElementsByClassName("card")[counter].style.height = "400px";
+
+                }
             }
-        }
 
-        function closeMenuOptions() {
-            document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "0px";
-            sideNavIterator--;
-            document.getElementById("toggleMenu").disabled = true;
-            if (sideNavIterator < 0) {
-                clearInterval(closeMenu)
-                document.getElementById("toggleMenu").disabled = false;
+            function revealCards() {
+                document.getElementById("teamsBackgroundTitle").style.height = 0;
             }
-        }
-
-        window.onscroll = function () { scrollFunction() };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-                document.getElementById("topButton").style.opacity = "1";
-                document.getElementById("topButton").style.bottom = "25px";
-            } else {
-                document.getElementById("topButton").style.opacity = "0";
-                document.getElementById("topButton").style.bottom = "0";
+            function showTeamPageLink(i) {
+                document.getElementsByClassName("TeamPageImage")[i].style.backgroundColor = "black";
+                document.getElementsByClassName("TeamPageLink")[i].style.transform = "translateY(10px)";
+                document.getElementsByClassName("TeamPageLink")[i].style.opacity = "1";
             }
-        }
-
-    </script>
-
-    <!--END: JS-->
+        </script>
+        <!--END: JS-->
 </body>
 
 </html>
