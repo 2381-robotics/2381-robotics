@@ -12,7 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu">
 
-
+    <meta name="keywords" content="2381, Robotics, Vex, Colonel By, Kernel Bye">
+    <meta name="description" content="2381 Robotics is a club run at Colonel By Secondary School Competing in the Vex Robotics Competition">
+    <meta name="author" content="Eshwar Chockalingam, Jeffrey Li">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -539,21 +541,21 @@
                 $("#TeamsTab").toggleClass("link-is-active");
                 if (pageWidth <= 1440) {
                     if (!teamListOpen) {
-                        $("#menuTeamList").style.marginLeft = "0";
+                        $("#menuTeamList").css('marginLeft', "0");
                         teamListOpen = true;
                     }
                     else {
-                        $("#menuTeamList").style.marginLeft = "-30px";
+                        $("#menuTeamList").css('marginLeft', "-30px");
                         teamListOpen = false;
                     }
                 }
                 else {
                     if (!teamListOpen) {
-                        $("#menuTeamList").style.marginLeft = "0";
+                        $("#menuTeamList").css('marginLeft', "0");
                         teamListOpen = true;
                     }
                     else {
-                        $("#menuTeamList").style.marginLeft = "-2.2vw";
+                        $("#menuTeamList").css('marginLeft', "-2.2vw");
                         teamListOpen = false;
                     }
                 }
@@ -566,13 +568,11 @@
                 });
                 $("#slide1").on("slide.bs.carousel", function (e) {
                     var direction = (e.direction == "left") ? "next" : "prev";
-                    console.log(direction);
                     $("#slide2").carousel(direction);
                     $("#slide-text").carousel(direction)
                 });
                 $(".aspect-ratio-height").each(function () {
                     $(this).css("width", ($(this).attr("ratio")) * ($(this).height()) + "px");
-                    console.log(($(this).attr("ratio")) * ($(this).css("height")));
                 });
             })
             sideNavIterator = 0;
@@ -622,11 +622,11 @@
 
             function scrollFunction() {
                 if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-                    $("#topButton").style.opacity = "1";
-                    $("#topButton").style.bottom = "25px";
+                    $("#topButton").css('opacity', "1");
+                    $("#topButton").css('bottom ',"25px");
                 } else {
-                    $("#topButton").style.opacity = "0";
-                    $("#topButton").style.bottom = "0";
+                    $("#topButton").css('opacity', "0");
+                    $("#topButton").css('bottom ',"0");
                 }
             }
 
@@ -640,11 +640,11 @@
 
             function scrollFunction() {
                 if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-                    $("#topButton").style.opacity = "1";
-                    $("#topButton").style.bottom = "25px";
+                    $("#topButton").css('opacity', "1");
+                    $("#topButton").css('bottom ',"25px");
                 } else {
-                    $("#topButton").style.opacity = "0";
-                    $("#topButton").style.bottom = "0";
+                    $("#topButton").css('opacity', "0");
+                    $("#topButton").css('bottom ',"0");
                 }
             }
             var counter = 0;
@@ -678,7 +678,7 @@
             }
 
             function revealCards() {
-                $("#teamsBackgroundTitle").style.height = 0;
+                $("#teamsBackgroundTitle").css('height', 0);
             }
             function showTeamPageLink(i) {
                 document.getElementsByClassName("TeamPageImage")[i].style.backgroundColor = "black";
