@@ -539,21 +539,21 @@
                 $("#TeamsTab").toggleClass("link-is-active");
                 if (pageWidth <= 1440) {
                     if (!teamListOpen) {
-                        document.getElementById("menuTeamList").style.marginLeft = "0";
+                        $("#menuTeamList").style.marginLeft = "0";
                         teamListOpen = true;
                     }
                     else {
-                        document.getElementById("menuTeamList").style.marginLeft = "-30px";
+                        $("#menuTeamList").style.marginLeft = "-30px";
                         teamListOpen = false;
                     }
                 }
                 else {
                     if (!teamListOpen) {
-                        document.getElementById("menuTeamList").style.marginLeft = "0";
+                        $("#menuTeamList").style.marginLeft = "0";
                         teamListOpen = true;
                     }
                     else {
-                        document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
+                        $("#menuTeamList").style.marginLeft = "-2.2vw";
                         teamListOpen = false;
                     }
                 }
@@ -589,7 +589,8 @@
                     sideNavOpen = true;
                     sideNavIterator = 0;
                     openMenu = setInterval(openMenuOptions, 25);
-                } else {
+                } 
+                else {
                     sideNavOpen = false;
                     sideNavIterator = 6;
                     closeMenu = setInterval(closeMenuOptions, 25);
@@ -597,22 +598,23 @@
             }
 
             function openMenuOptions() {
-                document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "200px";
+                $("#sidenav").find(`td:nth-child(${sideNavIterator})`).css('width', "200px");
+                console.log(sideNavIterator);
                 sideNavIterator++;
-                document.getElementById("toggleMenu").disabled = true;
+                $("#toggleMenu").disabled = true;
                 if (sideNavIterator == 7) {
                     clearInterval(openMenu)
-                    document.getElementById("toggleMenu").disabled = false;
+                    $("#toggleMenu").disabled = false;
                 }
             }
 
             function closeMenuOptions() {
-                document.getElementById("sidenav").getElementsByTagName("td")[sideNavIterator].style.width = "0px";
+                $("#sidenav").find(`td:nth-child(${sideNavIterator})`).css('width', "0");
                 sideNavIterator--;
-                document.getElementById("toggleMenu").disabled = true;
+                $("#toggleMenu").disabled = true;
                 if (sideNavIterator < 0) {
                     clearInterval(closeMenu)
-                    document.getElementById("toggleMenu").disabled = false;
+                    $("#toggleMenu").disabled = false;
                 }
             }
 
@@ -620,93 +622,17 @@
 
             function scrollFunction() {
                 if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-                    document.getElementById("topButton").style.opacity = "1";
-                    document.getElementById("topButton").style.bottom = "25px";
+                    $("#topButton").style.opacity = "1";
+                    $("#topButton").style.bottom = "25px";
                 } else {
-                    document.getElementById("topButton").style.opacity = "0";
-                    document.getElementById("topButton").style.bottom = "0";
+                    $("#topButton").style.opacity = "0";
+                    $("#topButton").style.bottom = "0";
                 }
             }
 
         </script>
         <script>
-            $(function () {
-                $("#toggleMenu").click(function () {
-                    toggleMenu()
-                });
-            })
-            sideNavIterator = 0;
-            sideNavOpen = false;
-
-            window.onload = function () {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-            function toggleMenu() {
-                $("#menuLine").toggleClass("fullLength");
-                $("toggleMenu").toggleClass("is-active");
-                if (!sideNavOpen) {
-                    sideNavOpen = true;
-                    sideNavIterator = 0;
-                    document.getElementById("toggleMenu").classList.add("is-active");
-                    var pageWidth = document.documentElement.clientWidth;
-                    if (pageWidth <= 1440) {
-                        document.getElementById("sidenav").style.width = "120px";
-                    }
-                    else {
-                        document.getElementById("sidenav").style.width = "8.7vw";
-                    }
-                    openMenu = setInterval(openMenuOptions, 75);
-                    var pageWidth = document.documentElement.clientWidth;
-                    if (pageWidth <= 1440) {
-                        document.getElementById("menuTeamList").style.marginLeft = "-30px";
-                    }
-                    else {
-                        document.getElementById("menuTeamList").style.marginLeft = "-2.2vw";
-
-                    }
-
-                } else {
-                    sideNavOpen = false;
-                    sideNavIterator = 7;
-                    closeMenu = setInterval(closeMenuOptions, 75);
-                    document.getElementById("sidenav").style.width = "0";
-                    var pageWidth = document.documentElement.clientWidth;
-                    if (pageWidth <= 1440) {
-                        document.getElementById("menuTeamList").style.marginLeft = "-40px";
-                    }
-                    else {
-                        document.getElementById("menuTeamList").style.marginLeft = "-3vw";
-
-                    } document.getElementById("toggleMenu").classList.remove("is-active");
-                }
-            }
-
-            function openMenuOptions() {
-                var pageWidth = document.documentElement.clientWidth;
-                if (pageWidth <= 1440) {
-                    document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "120px";
-                }
-                else {
-                    document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "8.7vw";
-                }
-                sideNavIterator++;
-                document.getElementById("toggleMenu").disabled = true;
-                if (sideNavIterator == 8) {
-                    clearInterval(openMenu)
-                    document.getElementById("toggleMenu").disabled = false;
-                }
-            }
-
-            function closeMenuOptions() {
-                document.getElementById("sidenav").getElementsByClassName("menuTD")[sideNavIterator].style.width = "0px";
-                sideNavIterator--;
-                document.getElementById("toggleMenu").disabled = true;
-                if (sideNavIterator < 0) {
-                    clearInterval(closeMenu)
-                    document.getElementById("toggleMenu").disabled = false;
-                }
-            }
+        
 
             window.onscroll = function () {
                 scrollFunction()
@@ -714,11 +640,11 @@
 
             function scrollFunction() {
                 if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-                    document.getElementById("topButton").style.opacity = "1";
-                    document.getElementById("topButton").style.bottom = "25px";
+                    $("#topButton").style.opacity = "1";
+                    $("#topButton").style.bottom = "25px";
                 } else {
-                    document.getElementById("topButton").style.opacity = "0";
-                    document.getElementById("topButton").style.bottom = "0";
+                    $("#topButton").style.opacity = "0";
+                    $("#topButton").style.bottom = "0";
                 }
             }
             var counter = 0;
@@ -752,7 +678,7 @@
             }
 
             function revealCards() {
-                document.getElementById("teamsBackgroundTitle").style.height = 0;
+                $("#teamsBackgroundTitle").style.height = 0;
             }
             function showTeamPageLink(i) {
                 document.getElementsByClassName("TeamPageImage")[i].style.backgroundColor = "black";
